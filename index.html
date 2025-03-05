@@ -4,31 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="台湾の観光ページ。台南のページ。">
-  <title>台南 | TAIWAN</title>
+  <meta name="description" content="台湾の観光ページ。台北のページ。">
+  <title>台北 | TAIWAN</title>
   <link rel="stylesheet" href="../common/css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../common/css/common.css">
-  <link rel="stylesheet" href="css/tainan.css">
-  <style>
-    /* パーフェクトピクセル用 */
-    body::-webkit-scrollbar {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="css/taipei.css">
 </head>
 
 <body>
+  <!-- ↓ローディング画面 -->
+  <div id="loading">
+    <div class="loading_logo"></div>
+  </div>
   <header>
-    <div class="wrap">
-      <h1>
-        <img src="image/tainan.png" alt="台南" class="tainan">
-      </h1>
-    </div>
-
-
     <!-- ↓ヘッダー↓ -->
     <div class="header_wrap">
       <div class="menu_fixed">
@@ -49,9 +40,9 @@
 
           <ul>
             <li><a href="../index.html"><span>top</span></a></li>
-            <li><a href="../taipei/index.html"><span>台北</span></a></li>
+            <li><a href="index.html"><span>台北</span></a></li>
             <li><a href="../taichung/index.html"><span>台中</span></a></li>
-            <li><a href="index.html"><span>台南</span></a></li>
+            <li><a href="../tainan/index.html"><span>台南</span></a></li>
           </ul>
         </nav>
       </div>
@@ -60,6 +51,12 @@
 
     </div>
     <!-- ↑ヘッダー↑ -->
+
+
+    <div class="kasaneru">
+      <p class="header_logo"><img src="image/taipei.png" alt="header_ロゴ">
+      </p>
+    </div>
 
   </header>
 
@@ -73,211 +70,339 @@
     </nav>
     <!-- ↑パンくずメニュー↑ -->
 
-
-
-    <section class="attraction_sec">
-      <div class="wrap">
-
-        <h2>
-          <p class="header_bg">
-            <span class="big"> attraction</span> 観光名所
-          </p>
-        </h2>
-
-        <section class="attraction_1">
-          <h3>安平老街</h3>
-          <div class="pc_grid">
-            <p class="main_img js_scroll_fade">
-              <picture>
-                <source media="(max-width: 767px)" srcset="image/ampinraojie.jpg">
-                <img src="image/ampinraojie_pc.jpg" alt="安平老街の写真">
-              </picture>
-            </p>
-            <p class="explanation">
-              「台湾の京都」の異名を持つ古都・台南。かつて台湾の首都であったことから、重要な史跡が点在し、ノスタルジックなムードが漂っています。17世紀に造られた台湾最古の街は、現在、台湾レトロとも称されており、数々の掘り出し物やお土産、飲食店が立ち並びます。写真スポットとしても人気の高いエリアです。
-            </p>
-
-            <div class="sub_img js_scroll_fade">
-              <p>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="image/ampinraojie_sub1.jpg">
-                  <img src="image/ampinraojie_sub1_pc.jpg" alt="安平老街の写真">
-                </picture>
-              </p>
-
-              <p>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="image/ampinraojie_sub2.jpg">
-                  <img src="image/ampinraojie_sub2_pc.jpg" alt="安平老街の写真">
-                </picture>
-              </p>
-            </div>
-
-            <p class="explanation">露店めぐりは日中、ノスタルジックな撮影は夜がおすすめです。</p>
-          </div>
-        </section>
-
-
-
-        <section class="attraction_2">
-          <h3>赤嵌楼</h3>
-          <div class="pc_grid">
-            <p class="main_img js_scroll_fade">
-              <picture>
-                <source media="(max-width: 767px)" srcset="image/sekikanro.jpg">
-                <img src="image/sekikanro_pc.jpg" alt="赤嵌楼の写真">
-              </picture>
-            </p>
-            <p class="explanation">
-              赤嵌楼は台南中西区の代表的な古跡で、安平区の安平古堡と並んで台南の二大古跡になっています。夜になると、周辺には黄色いライトが灯り、古い建築物をより一層味わい深く演出してくれます。前方の広場ではよく音楽会が催され、台南市民の夜の憩いの場にもなっています。赤嵌楼は、昼も夜も独特の魅力で楽しませてくれるでしょう。
-            </p>
-
-            <div class="sub_img js_scroll_fade">
-              <p>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="image/sekikanro_sub1.jpg">
-                  <img src="image/sekikanro_sub1_pc.jpg" alt="赤嵌楼の写真">
-                </picture>
-              </p>
-
-              <p>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="image/sekikanro_sub2.jpg">
-                  <img src="image/sekikanro_sub2_pc.jpg" alt="赤嵌楼の写真">
-                </picture>
-              </p>
-            </div>
-
-            <p class="explanation">遅い時間帯はライトアップも楽しめます。<span>営業時間 8:30 - 21:30</span></p>
-          </div>
-        </section>
-
-
+    <h2>
+      <div>
+        <p class="header_bg">
+          <span class="big"> attraction</span> 観光名所
+        </p>
       </div>
-    </section>
+    </h2>
 
+    <div class="padding">
+      <h3>
+        九份
+      </h3>
+      <!-- スマホ -->
+      <p class="kyuufunn_gazou">
+        <img src="image/kyuhun.jpg">
+      </p>
 
-    <section class="gourmet_sec">
-      <div class="wrap">
-
-        <h2>
-          <p class="header_bg">
-            <span class="big">gourmet</span> グルメ
-          </p>
-        </h2>
-
-
-        <p class="text">
-          台南でしか味わえない台湾グルメをご紹介いたします。
+      <div class="pc_kyuhun_flex">
+        <!-- pc -->
+        <p class="pc_kyuufun_gazou">
+          <img src="image/pc_ kyuhun.jpg">
         </p>
 
-        <div class="pc_grid">
-          <section>
-            <div>
-              <h3>担仔麺</h3>
-              <p class="sub_h3">タンツーメン</p>
+        <p class="reade_kyuhun">
+          細い路地の階段に沿って立つ古い館に、堤灯が灯るノスタルジックな風景。
+          1989年、映画「非情城市」の舞台になったことをきっかけに再び注目を集めると共に、日本では、九份の町中にある建物が2021年公開の映画「千と千尋の神隠し」に登場する湯婆婆の湯屋を彷彿させるとして話題に。
+          日本統治時代に建てられた古い建物が残ることから、どこか懐かしい雰囲気が漂う町並みは日本人の琴線に触れ、今や台湾で行きたい観光地ナンバーワンとなりました。
+        </p>
+      </div>
 
-              <p><img src="image/Gourmet_1.jpg" alt="担仔麺のお店の写真" class="js_scroll_fade"></p>
+      <div>
+        <ul class="kyuhun_sub">
+          <li>
+            <p id="kyuhun_sub1">
+              <img src="image/kyuhun_sub1.jpg" alt="九份提灯">
+            </p>
+          </li>
+          <li>
+            <p id="kyuhun_sub2"> <img src="image/kyuhun_sub2.jpg" alt="九份店">
+            </p>
+          </li>
+        </ul>
+      </div>
 
-              <p>台湾の屋台などでもよく食べられている麺料理で、あっさりしたスープにそぼろがトッピングされているのが特長です。「度小月」は各地に支店を持つ人気店です。</p>
-              <button id="modal_btn_1">画像を見る</button>
-            </div>
-          </section>
+      <div class="pc_kyuhun_flex2">
+        <div class="pc_kyuhun_sub">
+          <p class="pc_kyuhun_sub1"> <img src="image/pc_kyuhun_sub1.png"></p>
+          <p class="pc_kyuhun_sub2"><img src="image/pc_kyuhun_sub2.png">
+          </p>
+        </div>
 
+        <p class="time_eigyou">
+          幻想的な夕暮れが狙い目 <br>
+          <span class="big_eigyou">15:00~19:00
+          </span>
+        </p>
+      </div>
 
-          <section>
-            <div>
-              <h3>蝦仁飯</h3>
-              <p class="sub_h3">エビ飯</p>
+      <hr class="hr1">
 
-              <p><img src="image/Gourmet_2.jpg" alt="蝦仁飯のお店の写真" class="js_scroll_fade"></p>
+      <h3>
+        台北101
+      </h3>
+      <p id="taipei101">
+        <img src="image/taipei101.jpg" alt="台北101">
+      </p>
 
-              <p>台南10大美食にも選ばれている代表料理です。中でも有名な「矮仔成」は、台南に来ないと味わえない料理として知られており、日本人にも好まれる味です。</p>
-              <button id="modal_btn_2">画像を見る</button>
-            </div>
-          </section>
+      <div class="pc_taipei101_flex">
+        <p class="pc_taipei101">
+          <img src="image/pc_taipei101.png">
+        </p>
 
-
-          <section>
-            <div>
-              <h3>小籠包</h3>
-              <p class="sub_h3">ショウロンポー</p>
-
-              <p><img src="image/Gourmet_3.jpg" alt="小籠包のお店の写真" class="js_scroll_fade"></p>
-
-              <p>小籠包は世界中で愛されている台湾料理の一つですよね。「上海華都小吃」は、上海スタイルの料理を提供してくれるお店で、特に小籠包に定評があります。</p>
-              <button id="modal_btn_3">画像を見る</button>
-            </div>
-          </section>
-
-
-          <section>
-            <div>
-              <h3>鴨肉飯</h3>
-              <p class="sub_h3">ヤーロウファン</p>
-
-              <p><img src="image/Gourmet_4.jpg" alt="鴨肉飯のお店の写真" class="js_scroll_fade"></p>
-
-              <p>台湾の軽食文化を指す小吃は、台湾の人々の日々の食生活に欠かせないものとなっています。中でも「亞德當歸鴨」の鴨肉飯は人気の一品です。</p>
-              <button id="modal_btn_4">画像を見る</button>
-            </div>
-          </section>
-
+        <div class="taipei101_">
+          <p class="read_taipei101">
+            高さは509.2m、地上101階あるのが名前の由来です。
+            エレベーターは東芝エレベーター製で、毎分1,010メートル(時速60.6キロメートル)の速さで上昇でき、
+            地上1階から展望台のある89階(地上382.2メートル)まで39秒で到達します。
+            展望台、オフィス、レストラン、ショッピングモールなどが入る台湾を代表するランドマークワーで、
+            有名なカウントダウンパーティーをはじめ節目に合わせたライトアップも行っています。
+            一度は行ってみたい名所です。
+          </p>
         </div>
       </div>
-    </section>
 
-
-    <section class="healing_sec">
-      <div class="wrap">
-
-        <h2>
-          <p class="header_bg">
-            <span class="big">healing</span> 癒しのスポット
-          </p>
-        </h2>
-
-        <p class="text">
-          美しい蓮の花々が咲く白河地区。<br>
-          自然に囲まれて、至福のひとときを過ごしませんか？
+      <div class="taipei101_sub">
+        <p class="taipei101_sub1">
+          <img src="image/taipei101_sub1.jpg" alt="台北101ショッピングセンター">
         </p>
-
-
-        <section>
-          <h3>白河蓮花</h3>
-          <div class="pc_flex">
-
-            <p>
-              <picture>
-                <source media="(max-width: 767px)" srcset="image/Healing_1.jpg">
-                <img src="image/Healing_1_pc.jpg" alt="蓮の写真" class="js_scroll_fade">
-              </picture>
-            </p>
-
-            <p>白河地区は、蓮の栽培が盛んであり、美しい蓮の花が咲く景観で知られています。特に夏には蓮の花が最盛期を迎えるため、白河蓮花節などのイベントが開催されて多くの観光客が訪れます。</p>
-          </div>
-
-          <div class="pc_flex">
-            <p>
-              <picture>
-                <source media="(max-width: 767px)" srcset="image/Healing_2.jpg">
-                <img src="image/Healing_2_pc.jpg" alt="蓮の写真" class="js_scroll_fade">
-              </picture>
-            </p>
-
-            <p>白河地区の蓮花は「台南白河蓮花」とも呼ばれています。台南市の観光や文化の象徴の一つとされており、地元の経済や観光に重要な役割を果たしています。</p>
-          </div>
-        </section>
-
-
-
+        <p class="taipei101_sub2">
+          <img src="image/taipei101_sub2.jpg" alt="台北101からの街並み">
+        </p>
       </div>
-    </section>
+
+      <div class="pc_taipei101_flex3">
+        <div class="pc_taipei101_flex2">
+          <p class="pc_taipei101_sub1">
+            <img src="image/pc_taipei101_sub1.png">
+          </p>
+          <p class="pc_taipei101_sub2">
+            <img src="image/pc_taipei101_sub2.png">
+          </p>
+        </div>
+
+        <p class="time_eigyou">
+          展望台営業時間帯<br>
+          <span class="big_eigyou"> 11:00~19:00</span>
+        </p>
+      </div>
+
+      <h2 class="header_bg_yoiti">
+        <div>
+          <p class="header_bg">
+            <span class="big">
+              night market </span> 夜市
+          </p>
+        </div>
+      </h2>
+
+      <div class="NightMarket_flex">
+        <div class="gaiyou">
+          <hr class="hr_1">
+          <p class="read_NightMarket">
+            台湾観光の夜の目玉と言えば、なんと言っても夜市(ナイトマーケット)があげられます。
+            毎日市内の各所で開かれており、夕方から夜遅くまで多くの人々で賑わっています。
+            絶品B級グルメ・小吃からファッション、ゲームまで様々なお店が集まっています。
+          </p>
+          <hr class="hr_2">
+        </div>
+
+        <p class="NightMarket_1"><img src="image/NightMarket_1.jpg" alt="夜市ウインナー"></p>
+      </div>
+
+      <div class="NightMarket_flex">
+        <div class="NightMarket_btn">
+
+          <div class="btn_left">
+            <li class="list_type">
+              <p class="yoiti_1" id="modal_btn_1"><a href="#" class="yoiti_1_moji">寧夏夜市</a></p>
+            </li>
+
+            <li class="list_type">
+              <p class="yoiti_3" id="modal_btn_3"> <a href="#" class="yoiti_3_moji">士林夜市</a></p>
+            </li>
+
+          </div>
+
+          <div class="btn_right">
+            <li class="list_type">
+              <p class="yoiti_2" id="modal_btn_2"><a href="#" class="yoiti_2_moji">饒河街観光夜市</a></p>
+            </li>
 
 
+
+            <li class="list_type">
+              <p class="yoiti_4" id="modal_btn_4"><a href="#" class="yoiti_4_moji">通化夜市</a></p>
+            </li>
+          </div>
+
+        </div>
+
+        <p class="NightMarket_2">
+          <img src="image/NightMarket_2.jpg" alt="夜市屋台">
+        </p>
+      </div>
+
+      <h2 class="Access">
+
+        <p class="header_bg">
+          <span class="big">access</span>
+          交通手段
+        </p>
+      </h2>
+
+      <p class="kakuti">
+        各地へのアクセスにご利用ください。
+      </p>
+
+      <hr class="hr3">
+      <!-- スマホ -->
+      <p class="Access_taxi">
+        <img src="image/Access.jpg" alt="Access_タクシー">
+      </p>
+      <!-- PC -->
+      <p class="pc_Access">
+        <img src="image/pc_Access.png">
+      </p>
+
+      <div class="subway">
+        <h4>
+          ■<b>地下鉄</b>(初乗り20元)
+        </h4>
+        <p class="Access_read">
+          乗り方は日本の地下鉄とほぼ同じ。
+          <br class="br">
+          改札を通る時に、切符やICカードをタッチします。
+          台北MRTは全て各駅停車です。
+        </p>
+      </div>
+
+      <div class="bus">
+        <h4>
+          <p>
+            ■<b>バス</b>(初乗り15元)
+          </p>
+        </h4>
+        <p class="Access_read">
+          バス停には、ポールが立っており、大通りでは車道の真ん中のバスレーン沿いにあります。<br class="br">
+          乗りたい場合、バスに向かって手を挙げて知らせます。
+          運賃を現金で払う場合は、運転手に行先を告げてから運賃箱にお金を入れます。
+        </p>
+      </div>
+
+      <div class="taxi">
+        <h4>
+          ■<b>タクシー</b>(初乗り70元)
+        </h4>
+        <p class="Access_read">
+          市内の移動で気軽に使うことが出来ます。<br class="br">
+          MRTなどが運行していない真夜中や早朝の移動にも便利です。
+          新幹線の駅や有名観光地などにはタクシー乗り場が準備されているので、
+          そこから乗りましょう。ホテルではフロントで呼んでもらうこともできます。
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>
+          ■<b>悠遊カード</b>(販売額100元)
+        </h4>
+        <p class="Access_card">
+          <img src="image/Access_card.png" alt="悠遊カード">
+        </p>
+        <p class="Access_read">
+          現金をチャージして使うことが出来る交通系ICカードです。<br class="br">
+          MRT・バス・台湾鉄路などで使用することができ、運賃が割引になります。
+          台湾旅行の際に手に入れておくと便利です。
+        </p>
+      </div>
+    </div>
+
+    <!-- /////////////////////////////// -->
+    <!--夜市モーダル1  -->
+    <!-- /////////////////////////////////// -->
+
+    <div class="modal_design">
+      <p class="modal_close">
+        <img src="../common/image/modal_close.png">
+      </p>
+      <h3>寧夏夜市</h3>
+
+      <div class="modal_flex">
+        <p class="modal_img">
+          <img src="image/NM_modal1.jpg">
+        </p>
+        <div>
+          <p class="modal_read">
+            寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
+          </p>
+          <p class="modal_eigyou">
+            営業時間:17:00~25:00
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////////////// -->
+    <!-- 夜市モーダル2 -->
+
+    <div class="modal_design">
+      <p class="modal_close">
+        <img src="../common/image/modal_close.png">
+      </p>
+      <h3>
+        饒河街観光夜市</h3>
+
+      <div class="modal_flex">
+        <p class="modal_img"><img src="image/NM_modal2.jpg"></p>
+
+        <div>
+          <p class="modal_read">
+            饒河街観光夜市は、屋台料理から雑貨や生活用品も扱う夜市です。手ごろな値段が魅力的で、多くの人々で賑わいます。最も観光客に人気があるのは「藥燉排骨」「胡椒餅」「水煎包」。行列ができる程の人気料理です。他には「麻辣臭豆腐」「牛肉麵」「天婦羅」など台湾の伝統的な屋台料理も定番です。
+          </p>
+          <p class="modal_eigyou">
+            営業時間:17:00~23:00
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- //////////////////////////////////
+ 夜市モーダル3 -->
+
+    <div class="modal_design">
+      <p class="modal_close">
+        <img src="../common/image/modal_close.png">
+      </p>
+      <h3>士林夜市</h3>
+
+      <div class="modal_flex">
+        <p class="modal_img"><img src="image/NM_modal3.jpg"></p>
+        <div>
+          <p class="modal_read">
+            ここは市内で最も規模が大きく知名度の高い夜市です。台湾のおいしい屋台グルメからユニークな雑貨まで、ありとあらゆるものが売られています。その種類の豊富さと敷地の広さ、歴史、そして夜遊びスポットとしての人気度は、何から何まで台北ナンバーワン。絶対にはずせない魅惑スポットです。
+          </p>
+          <p class="modal_eigyou">
+            営業時間:17:00~23:00
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////////
+ 夜市モーダル4 -->
+
+    <div class="modal_design">
+      <p class="modal_close">
+        <img src="../common/image/modal_close.png">
+      </p>
+      <h3>通化夜市</h3>
+
+      <div class="modal_flex">
+        <p class="modal_img"><img src="image/NM_modal4.jpg"></p>
+        <div>
+          <p class="modal_read">
+            台北の他の夜市と比べると小規模ではあるものの、食べ物においてはどの夜市にも決して劣りません。有名な駱記小炒（炒め物）、裕品元の氷火湯円、平価鉄板焼、通化夜市の揚げサツマイモボールは、ぜひとも賞味したい特色的な伝統軽食です。マッサージ店もたくさんあり、1日の終わりに最適な夜市です。
+          </p>
+          <p class="modal_eigyou">
+            営業時間:17:00~24:00
+          </p>
+        </div>
+      </div>
+    </div>
   </main>
-
-
   <footer>
     <!-- TOPへ戻る -->
     <div id="top_return">
@@ -294,13 +419,13 @@
             <a href="../index.html">TOP</a>
           </p>
           <p class="line_style">
-            <a href="../taipei/index.html"> 台北</a>
+            <a href="index.html"> 台北</a>
           </p>
           <p class="line_style">
             <a href="../taichung/index.html">台中</a>
           </p>
           <p class="line_style">
-            <a href="index.html">
+            <a href="../tainan/index.html">
               台南</a>
           </p>
           <p class="line_style">
@@ -348,46 +473,11 @@
       </div>
     </div>
   </footer>
-
-  <!-- modal1 -->
-
-  <div class="modal_design">
-    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-    <p><img src="image/G_modal_sub1.jpg" alt=""></p>
-  </div>
-
-
-  <!-- modal2 -->
-  <div class="modal_design">
-    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-    <p><img src="image/G_modal_sub2.jpg" alt=""></p>
-  </div>
-
-
-  <!-- modal3 -->
-  <div class="modal_design">
-    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-    <p><img src="image/G_modal_sub3.jpg" alt=""></p>
-  </div>
-
-
-  <!-- modal4 -->
-  <div class="modal_design">
-    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-    <p><img src="image/G_modal_sub4.jpg" alt=""></p>
-  </div>
-
-  <!-- ↓ローディング画面 -->
-  <div id="loading">
-    <div class="loading_logo"></div>
-  </div>
-  <!-- ↑ローディング画面 -->
-
   <script src="../common/js/loading.js"></script>
   <script src="../common/js/others.js"></script>
   <script src="../common/js/modal.js"></script>
   <script src="../common/js/pagetop.js"></script>
-  <script src="js/tainan.js"></script>
+  <script src="js/taipei.js"></script>
 </body>
 
 </html>

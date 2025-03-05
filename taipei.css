@@ -1,0 +1,1172 @@
+@charset "utf-8";
+
+img {
+  max-width: 100%
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", serif;
+  background-color: #F4F4F4;
+}
+
+/* //////////////////////////////////// */
+/* header */
+/* ///////////////////////////////////// */
+header {
+  background: url(../image/taipei_top_bg.jpg) no-repeat right center/cover;
+}
+
+.header_logo img {
+  width: 199px;
+  height: 372px;
+  margin-top: 112px;
+  margin-bottom: 167px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.header_logo {
+  height: 667px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* /////////////////////////////////// */
+/* main */
+/* //////////////////////////////// */
+
+/* ////////////////////////////// */
+/* Attraction観光名所 */
+h2 {
+  margin-bottom: 40px;
+}
+
+/* /////////////////////// */
+/* 九份 */
+/* ////////////////////// */
+h3 {
+  font-family: Zen kaku Gothic New;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.padding {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* 九份 main画像 */
+.kyuufunn_gazou img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.pc_kyuufun_gazou img {
+  display: none;
+}
+
+.reade_kyuhun {
+  width: 295px;
+  height: 231px;
+  background-color: rgba(114, 195, 226, 0.2);
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 20px 16px 20px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+/* 九份sub画像*/
+.kyuhun_sub {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#kyuhun_sub1 img {
+  max-width: 280px;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  position: relative;
+  right: 3px;
+}
+
+#kyuhun_sub2 img {
+  max-width: 280px;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  position: relative;
+  left: 3px;
+}
+
+.pc_kyuhun_sub {
+  display: none;
+}
+
+.time_eigyou {
+  width: 295px;
+  height: 52px;
+  background-color: rgba(114, 195, 226, 0.2);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big_eigyou {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 区切り線 */
+.hr1 {
+  border-top: 1px solid #000000;
+  width: 225px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* /////////////////////////// */
+/* 台北101 */
+/* ////////////////////////////// */
+
+/* 台北101main画像 */
+#taipei101 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* 台北101sub画像 */
+.taipei101_sub {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pc_taipei101_flex2 {
+  display: none;
+}
+
+.pc_taipei101 {
+  display: none;
+}
+
+.read_taipei101 {
+  width: 295px;
+  height: 231px;
+  background-color: rgba(114, 195, 226, 0.2);
+  font-family: Zen Kaku Gothic New;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 20px 16px 20px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taipei101_sub1 img {
+  width: 140px;
+  height: 225px;
+  margin-top: 20px;
+}
+
+.taipei101_sub2 img {
+  width: 140px;
+  height: 225px;
+  margin-top: 20px;
+}
+
+/* ////////////////////////////////////// */
+/* NaightMarket夜市 */
+/* 見出し */
+
+.yoiti {
+  width: 220px;
+  height: 40px;
+  margin-top: 64px;
+  font-size: 12px;
+  text-align: center;
+  background: url(../../common/image/header_bg.png) no-repeat center/cover;
+  position: relative;
+  right: 40px;
+}
+
+.header_bg {
+  position: relative;
+  top: 5px;
+  left: 3px;
+}
+
+.read_NightMarket {
+  font-size: 12px;
+  line-height: 1.6;
+  width: 295px;
+  height: 95px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NightMarket_1 img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.NightMarket_2 img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 60px;
+}
+
+
+/* ///////////////////////////////// */
+/* 夜市リンクボタン */
+/* ///////////////////////////////// */
+
+
+.list_type {
+  list-style-type: none;
+}
+
+
+.yoiti_1 {
+  background: url(../image/NightMarket_btnframe.png) no-repeat center/contain;
+  width: 131px;
+  height: 57px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.NightMarket_btn a {
+  position: relative;
+  top: 20px;
+}
+
+.yoiti_2 {
+  background: url(../image/NightMarket_btnframe.png) no-repeat center/contain;
+  width: 131px;
+  height: 57px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn_left {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn_right {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.yoiti_3 {
+  background: url(../image/NightMarket_btnframe.png) no-repeat center/contain;
+  width: 131px;
+  height: 57px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.yoiti_4 {
+  background: url(../image/NightMarket_btnframe.png) no-repeat center/contain;
+  width: 131px;
+  height: 57px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.NightMarket_btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+
+/* //////////////////////////// */
+/* Access 交通手段 */
+/* ///////////////////////// */
+
+h2 .Access {
+  width: 220px;
+  height: 40px;
+  margin-top: 64px;
+  font-size: 12px;
+  text-align: center;
+  background: url(../../common/image/header_bg.png) no-repeat center/cover;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  position: relative;
+  right: 40px;
+}
+
+.kakuti {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.hr3 {
+  border-top: 1px solid #000000;
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+
+
+.pc_Access img {
+  display: none;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+.subway {
+  width: 295px;
+  height: 82px;
+  margin-top: 20px;
+  position: relative;
+  top: 30px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bus {
+  width: 295px;
+  height: 119px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.taxi {
+  width: 295px;
+  height: 119px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  width: 295px;
+  height: 175px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Access_read {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.br {
+  display: none;
+}
+
+/* 悠游カード画像 */
+.Access_card img {
+  width: 100px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* //////////////////////////////////
+ modal寧夏夜市 */
+.NM_modal1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* modal饒河街観光夜市 */
+.yoiti_modal_2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* modal 士林夜市*/
+.NM_modal3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* modal 通化夜市*/
+.NM_modal4 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ////////////////////////////////
+footer */
+/* /////////////////////////////// */
+
+footer {
+  width: 100%;
+
+}
+
+.footer_color {
+  height: 352px;
+  background-color: #0180BE;
+
+}
+
+.taiwan_flag img {
+  margin-top: 20px;
+}
+
+.taiwan_flag {
+  text-align: center;
+}
+
+.line_style {
+  width: 200px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Noto Sans JP;
+  border-bottom: solid 1px #ffffff;
+  /*下線*/
+
+}
+
+.copylight {
+  font-family: Noto Sans JP;
+  font-size: 10px;
+  color: #ffffff;
+
+}
+
+.footer_menyu {
+  width: 201px;
+  height: 180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon_Facebook img {
+  width: 38px;
+  height: 38px;
+
+}
+
+.icon_Facebook {
+  width: 38px;
+  height: 38px;
+  margin-top: 20px;
+  margin-right: 20px;
+
+}
+
+.icon_Instagram img {
+  width: 32px;
+  height: 32px;
+  margin-top: 22px;
+  margin-right: 20px;
+}
+
+.icon_Instagram {
+  width: 32px;
+  margin-right: 20px;
+}
+
+.icon_X img {
+  width: 30px;
+  height: 31px;
+
+}
+
+.icon_X {
+  width: 30px;
+  height: 31px;
+  margin-top: 24px;
+}
+
+.sns {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p_copylight {
+  text-align: center;
+}
+
+.copylight {
+  font-family: Noto Sans JP;
+  font-size: 10px;
+  font-weight: regular;
+  text-align: center;
+}
+
+.pc_footer_logo img {
+  display: none;
+}
+
+/* modal */
+.modal_design {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+  transition: all 300ms ease-in;
+  padding: 80px 20px 0;
+  background-color: #0180BE;
+}
+
+.akeru {
+  z-index: 100;
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+.modal_close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.modal_design h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal_design p {
+  margin-bottom: 20px;
+}
+
+.modal_design .modal_read {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
+  padding: 0 16px;
+}
+
+.modal_design .modal_eigyou {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 768px) {
+
+  /* //////////////////////////////// */
+  /* header */
+  /* /////////////////////////////////// */
+  header {
+    height: 768px;
+  }
+
+  #header_migisita {
+    font-size: 20px;
+    width: 482px;
+    height: 96px;
+  }
+
+  .header_logo img {
+    margin: 114px 0 0 280px;
+    height: 540px;
+    width: 300px;
+  }
+
+
+
+
+
+  /* //////////////////////////////
+  Attraction見出し */
+  /* //////////////////////////////////// */
+  h2 {
+    width: 530px;
+    height: 96px;
+    margin-top: 80px;
+    font-family: Zen Kaku Gothic New;
+    font-size: 24px;
+    text-align: center;
+    background: url(../../common/image/header_bg.png) no-repeat center/cover;
+    margin: 0 80px;
+    margin-right: 650px;
+  }
+
+  .header_bg {
+    position: relative;
+    top: 24px;
+    line-height: 1;
+  }
+
+  .big {
+    font-size: 48px;
+  }
+
+  /* /////////////////////////////////////////
+  /* 九份 */
+  /* ///////////////////////////////// */
+  h3 {
+    font-size: 36px;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+
+  .kyuufunn_gazou {
+    display: none;
+  }
+
+  .pc_kyuufun_gazou img {
+    display: block;
+    max-width: 600px;
+    width: 43.9vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .kyuhun_sub1 img {
+    display: none;
+  }
+
+  .kyuhun_sub2 img {
+    display: none;
+  }
+
+  .reade_kyuhun {
+    max-width: 480px;
+    width: 35.1vw;
+    height: auto;
+    font-size: clamp(0.75rem, 0.0683rem + 1.3841vw, 1.25rem);
+    margin: 0;
+    margin: 0;
+  }
+
+  .pc_kyuhun_flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .kyuhun_sub {
+    display: none;
+  }
+
+  .pc_kyuhun_sub {
+    display: flex;
+    width: 599px;
+    height: 200px;
+    justify-content: space-evenly;
+  }
+
+  .pc_kyuhun_sub1 img {
+    max-width: 290px;
+    width: 21.2vw;
+    height: auto;
+  }
+
+  .pc_kyuhun_sub2 img {
+    max-width: 290px;
+    width: 21.2vw;
+    height: auto;
+  }
+
+  .pc_kyuhun_flex2 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .time_eigyou {
+    max-width: 480px;
+    width: 100%;
+    font-size: clamp(0.75rem, 0.0683rem + 1.3841vw, 1.25rem);
+    margin: 0;
+    align-self: center;
+  }
+
+  /* 区切り線 */
+  .hr1 {
+    margin-top: 120px;
+  }
+
+  /* ////////////////////////// */
+  /* 台北101 */
+  /* ///////////////////////// */
+  #taipei101 img {
+    display: none;
+  }
+
+  .pc_taipei101 {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .pc_taipei101 img {
+    max-width: 600px;
+    width: 43.9vw;
+    height: auto;
+  }
+
+  .pc_taipei101_flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .read_taipei101 {
+    max-width: 480px;
+    width: 35.1vw;
+    height: auto;
+    font-size: clamp(0.75rem, 0.0683rem + 1.3841vw, 1.25rem);
+    margin: 0;
+  }
+
+  .taipei101_sub {
+    display: none;
+  }
+
+  .pc_taipei101_sub1 img {
+    max-width: 290px;
+    width: 21.2vw;
+    height: auto;
+  }
+
+  .pc_taipei101_sub2 img {
+    max-width: 290px;
+    width: 21.2vw;
+    height: auto;
+  }
+
+  .time_eigyou {
+    max-width: 480px;
+    width: 35vw;
+    height: 100px;
+    font-size: clamp(0.75rem, 0.0683rem + 1.3841vw, 1.25rem);
+    margin: 0;
+    padding-top: 25px;
+    margin: 0;
+  }
+
+  .pc_taipei101_flex2 {
+    display: flex;
+    width: 599px;
+    height: 200px;
+    justify-content: space-evenly;
+  }
+
+  .pc_taipei101_flex3 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* //////////////////////////////// */
+  /* Night Market 夜市 */
+  /* //////////////////////////////// */
+  .header_bg_yoiti {
+    margin: 0 0 0 auto;
+    margin-bottom: 80px;
+    margin-top: 120px;
+  }
+
+  .read_NightMarket {
+    max-width: 420px;
+    min-width: 300px;
+    width: 30.7vw;
+    height: auto;
+    font-size: clamp(0.875rem, 0.3759rem + 1.0239vw, 1.25rem);
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 30px;
+  }
+
+  .gaiyou {
+    width: 420px;
+    height: 256px;
+    margin-bottom: 50px;
+  }
+
+  .NightMarket_1 img {
+    max-width: 540px;
+    width: 39.5vw;
+    height: auto;
+
+  }
+
+  .NightMarket_flex {
+    display: flex;
+  }
+
+  .hr_1 {
+    max-width: 420px;
+    margin-top: 22px;
+    margin-left: 30px;
+  }
+
+  .hr_2 {
+    max-width: 420px;
+    align-self: center;
+    margin-left: 30px;
+  }
+
+  .yoiti_1 {
+    max-width: 254px;
+    min-width: 170px;
+    width: 18vw;
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .yoiti_1_moji {
+    display: block;
+    padding: 20px 0;
+  }
+
+
+  .yoiti_3 {
+    max-width: 254px;
+    min-width: 170px;
+    width: 18vw;
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .yoiti_3_moji {
+    display: block;
+    padding: 20px;
+  }
+
+  .yoiti_2 {
+    max-width: 254px;
+    min-width: 170px;
+    width: 18vw;
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .yoiti_2_moji {
+    display: block;
+    padding: 20px;
+  }
+
+  .yoiti_4 {
+    max-width: 254px;
+    min-width: 170px;
+    width: 18vw;
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .yoiti_4_moji {
+    display: block;
+    padding: 20px;
+  }
+
+  .NightMarket_btn {
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .NightMarket_2 img {
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+    margin-right: 40px;
+  }
+
+  .NightMarket_flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* /////////////////////////////// */
+  /* Access */
+  /* //////////////////////////////////*/
+  .Access {
+    margin-left: 20px;
+    margin-bottom: 80px;
+    margin-top: 120px;
+  }
+
+  .kakuti {
+    font-size: 24px;
+    width: 420px;
+    height: 33px;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+
+  .hr3 {
+    width: 420px;
+    text-align: left;
+    margin-right: 780px;
+  }
+
+  .Access_taxi img {
+    display: none;
+  }
+
+  .pc_Access img {
+    display: block;
+    max-width: 1120px;
+    width: 100%;
+    height: auto;
+    margin-top: 89px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subway {
+    max-width: 1120px;
+    width: initial;
+    height: 121px;
+    margin-bottom: 90px;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .Access_read {
+    font-size: clamp(0.75rem, 0.0683rem + 1.3841vw, 1.25rem);
+    max-width: 1200px;
+  }
+
+  .br {
+    display: block;
+  }
+
+  .bus {
+    max-width: 1120px;
+    width: initial;
+    height: 160px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .taxi {
+    max-width: 1120px;
+    width: initial;
+    height: 198px;
+  }
+
+  .card {
+    max-width: 1120px;
+    width: initial;
+    height: 335px;
+    margin-top: 60px;
+  }
+
+  .Access_card img {
+    width: 246px;
+    height: 155px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* //////////////////////////// */
+  /* PC footer */
+  /* ////////////////////////////// */
+
+  footer {
+    width: 100%;
+    height: 713px;
+  }
+
+  .footer_color {
+    height: 473px;
+  }
+
+  .taiwan_flag img {
+    width: 64px;
+    height: 48px;
+  }
+
+  p.taiwan_flag {
+    text-align: center;
+  }
+
+  .line_style {
+    font-size: 20px;
+  }
+
+  .sns {
+    text-align: right;
+  }
+
+  .pc_footer_logo img {
+    display: block;
+    width: 240px;
+    height: 96px;
+    text-align: center;
+  }
+
+  .pc_footer_logo {
+    text-align: center;
+
+  }
+
+  .copylight {
+    font-size: 12px;
+  }
+
+  .p_copylight {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
+  .pc_footer_grid {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  .footer_menyu {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    top: 50px;
+  }
+
+  .footer_logo {
+    list-style-type: none;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+
+  .sns {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 90px;
+  }
+
+
+
+  /* modal */
+  .modal_design {
+    padding: 80px 103px 0;
+  }
+
+  .modal_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .modal_design h3 {
+    font-size: 36px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .modal_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal_design p {
+    margin-bottom: 0px;
+  }
+
+  .modal_design .modal_img {
+    max-width: 600px;
+    width: 44vw;
+  }
+
+  .modal_flex div {
+    max-width: 500px;
+    width: 37vw;
+  }
+
+  .modal_design .modal_read {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .modal_design .modal_eigyou {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width:1080px) {}

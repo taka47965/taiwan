@@ -1,0 +1,590 @@
+@charset "utf-8";
+
+body {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 12px;
+}
+
+header {
+  height: 667px;
+  background: url(../image/taichung_top_bg_sp.jpg) no-repeat center/cover;
+  text-align: center;
+}
+
+header .taichung {
+  height: 372px;
+  margin: 120px auto 175px;
+}
+
+section {
+  text-align: center;
+}
+
+.js_scroll_animation {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+
+.appearance {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+#attraction {
+  margin: 41px 40px 60px;
+}
+
+.attraction1 {
+  padding-bottom: 56px;
+}
+
+#attraction h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: .3em;
+}
+
+#attraction img {
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.explanation {
+  margin: 0 auto;
+  padding: 20px 16px;
+  width: 590px;
+  max-width: 100%;
+  background-color: rgba(237, 161, 132, 0.2);
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: justify;
+}
+
+.attraction_text2,
+.attraction_text4 {
+  padding: 8px 16px;
+}
+
+.attraction2::before {
+  display: inline-block;
+  content: "";
+  width: 76.2%;
+  height: 0;
+  border-top: 1px solid #000;
+  margin-bottom: 57px;
+}
+
+.attraction_text3 {
+  text-align: left;
+}
+
+#museum {
+  margin: 0 40px 64px;
+}
+
+.summary {
+  margin: 40px 35px;
+  padding: 12px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.museum_item {
+  margin: 0 auto 43px;
+  width: 590px;
+  max-width: 100%;
+}
+
+#museum h3 {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: justify;
+}
+
+#museum h4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: justify;
+}
+
+#museum img {
+  margin: 12px 0;
+  max-width: 100%;
+}
+
+.text {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.btn {
+  text-align: right;
+}
+
+.btn a {
+  border: 2px solid rgba(1, 128, 190, 0.5);
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+  padding: 8px 10px;
+  position: relative;
+}
+
+.btn a:hover {
+  text-decoration: underline wavy #0180BE 1px;
+}
+
+.btn a::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 6px solid #0180BE;
+  position: relative;
+  top: 1px;
+  left: 6px;
+}
+
+/* ↓modal */
+.modal_design {
+  padding: 80px 40px 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #0180BE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.akeru {
+  z-index: 100;
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+.modal_close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+}
+
+.modal_design h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.modal_img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_img img {
+  margin: 20px 0;
+  width: 47.4%;
+}
+
+.modal_design p {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+/* ↑modal */
+
+#sweets {
+  margin: 0 40px 0;
+}
+
+.sweets_design {
+  margin-top: 40px;
+}
+
+#sweets h3 {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#sweets .sweets_text {
+  margin: 20px auto;
+  width: 590px;
+  max-width: 100%;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: justify;
+}
+
+#sweets img {
+  max-width: 100%;
+}
+
+.sweets_img {
+  margin: 0 auto;
+  width: 590px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sweets_img img {
+  width: 47.4%;
+}
+
+@media screen and (min-width:768px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  header {
+    height: 768px;
+    text-align: left;
+    background: url(../image/taichung_top_bg_pc.jpg) no-repeat center/cover;
+  }
+
+
+  #header_image {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  header .taichung {
+    margin: 114px 0 0 23.33%;
+    height: 540px;
+    width: 300px;
+  }
+
+  section {
+    padding: 0 20px;
+    width: 1200px;
+    max-width: 100%;
+  }
+
+  #attraction {
+    margin: 80px auto 0;
+  }
+
+  .attraction_title {
+    margin-right: 17px;
+  }
+
+  .attraction1 {
+    margin: 80px 20px 120px;
+    padding: 0;
+  }
+
+  #attraction h3 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .explanation {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  .attraction_design {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 53.6% 43%;
+    grid-template-rows: 368px 200px;
+    gap: 20px 30px;
+  }
+
+  #attraction .attraction_main {
+    margin: 0;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #attraction .attraction_text1 {
+    padding: 25px 20px;
+    font-size: clamp(0.969rem, 0.469rem + 1.04vw, 1.25rem);
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #attraction .attraction_sub {
+    margin: 0;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #attraction .attraction_text2 {
+    padding: 18px 20px;
+    align-self: center;
+  }
+
+  .attraction2 {
+    margin: 0 20px;
+  }
+
+  .attraction2::before {
+    display: inline-block;
+    content: "";
+    width: 420px;
+    height: 0;
+    border-top: 1px solid #000;
+    margin-bottom: 115px;
+  }
+
+  #attraction .attraction_text3 {
+    padding: 20px;
+    align-self: center;
+    font-size: clamp(1rem, 0.556rem + 0.93vw, 1.25rem);
+    text-align: justify;
+  }
+
+  #attraction .attraction_text4 {
+    padding: 18px 20px;
+    align-self: center;
+  }
+
+  #museum {
+    margin: 120px auto 0;
+  }
+
+  .museum_title_area {
+    display: flex;
+    justify-content: end;
+  }
+
+  .museum_title {
+    margin-right: 7px;
+  }
+
+  .summary {
+    margin: 0 40px 80px auto;
+    padding: 20px 20px 12px;
+    width: 440px;
+    font-size: 20px;
+  }
+
+  #museum h3 {
+    font-size: 24px;
+  }
+
+  #museum h4 {
+    font-size: 36px;
+    line-height: 1.9;
+  }
+
+  .museum_item {
+    margin: 0;
+  }
+
+  .museum_design {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 558px 558px;
+    gap: 37px 35px;
+  }
+
+  #museum .item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #museum .item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #museum .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #museum .item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #museum img {
+    margin: 14px 0 20px;
+    max-width: 99.63%;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn a {
+    font-size: 20px;
+    padding: 21px 24px 20px;
+  }
+
+  .btn a:hover {
+    text-decoration: underline wavy #0180BE 2px;
+  }
+
+  .btn a::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-left: 9px solid #0180BE;
+    position: relative;
+    top: 1px;
+    left: 6px;
+  }
+
+  /* ↓modal */
+
+  .modal_design {
+    margin: 0 auto;
+    padding: 80px 293px 0;
+    height: 100vh;
+  }
+
+  .modal_design h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .modal_img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal_img img {
+    width: 46.2%;
+  }
+
+  .modal_design p {
+    font-size: 20px;
+  }
+
+  /* ↑modal */
+
+  #sweets {
+    margin: 120px auto 0px;
+  }
+
+  .sweets_title {
+    margin-right: 17px;
+  }
+
+  .sweets_design {
+    margin: 80px 20px 0;
+  }
+
+  #sweets h3 {
+    margin-left: 173px;
+    font-size: 36px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  #sweets img {
+    object-fit: contain;
+  }
+
+  #sweets .sweets_text {
+    margin: 0;
+    font-size: clamp(1.063rem, 0.729rem + 0.69vw, 1.25rem);
+  }
+
+  #sweets .catch {
+    margin: 40px 35px 60px;
+    padding: 20px 0;
+    width: 420px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  #sweets .sweets_grid {
+    display: grid;
+    grid-template-columns: 53.58% 42.86%;
+    grid-template-rows: 368px 340px 88px;
+    column-gap: 24px;
+  }
+
+  .sweets_item1 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #sweets .sweets_item2 {
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .sweets_img {
+    width: 96.65%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  #sweets .sweets_item5 {
+    align-self: end;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .sweets_item4 {
+    margin-top: 40px;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .attraction_design {
+    gap: 20px 40px;
+  }
+
+  .museum_design {
+    gap: 60px 58px;
+  }
+
+  #sweets .sweets_grid {
+    column-gap: 40px;
+  }
+
+  #sweets img {
+    object-fit: cover;
+  }
+
+  .sweets_img {
+    margin-top: 40px;
+  }
+}
+
+
+/* gridアイテムの幅にcalc関数使えるらしい？ */

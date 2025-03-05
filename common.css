@@ -1,0 +1,585 @@
+@charset "utf-8";
+
+/* ↓ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #0180BE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_logo {
+  height: 117px;
+  width: 287px;
+  background: url(../image/logo.svg) no-repeat center;
+  animation: logoAnimation 4000ms ease-in infinite;
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ↑ローディング画面 */
+
+/* ↓ヘッダー↓ */
+img {
+  max-width: 100%;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.menu_fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.menu_fixed .left_top_logo img {
+  margin: 0;
+  width: 111px;
+}
+
+#menu_btm_o {
+  width: 48px;
+  height: 48px;
+}
+
+#nav {
+  top: 0;
+  right: -60%;
+  width: 60%;
+  z-index: 100;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  transition: all 300ms ease-in;
+}
+
+#nav .nav_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav .menu_logo img {
+  margin: 8px 0 56px 8px;
+  width: 100px;
+}
+
+#menu_btm_c {
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+}
+
+#nav li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+#nav li a:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#nav li a span {
+  border-bottom: 1px solid #fff;
+}
+
+header {
+  position: relative;
+}
+
+#header_migisita {
+  position: absolute;
+  opacity: 0;
+  transition: all 300ms ease-in;
+  color: #fff;
+  font-weight: bold;
+  right: 8px;
+  bottom: 8px;
+  line-height: 1.6;
+  width: 66%;
+  text-align: justify;
+}
+
+/* ↑ヘッダー↑ */
+
+/* ↓パンくずメニュー */
+
+#breadcrumbs {
+  margin: 8px auto 40px 8px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  display: flex;
+}
+
+#breadcrumbs li a {
+  text-decoration: underline solid rgba(0, 0, 0, 0.7) 1px;
+  text-transform: capitalize;
+}
+
+#breadcrumbs #this_page::before {
+  content: "\003E";
+  margin: 0 4px 0 6px;
+}
+
+/* ↑パンくずメニュー */
+
+/* ↓見出し↓ */
+h2 {
+  width: 220px;
+  height: 40px;
+  margin-top: 64px;
+  font-size: 12px;
+  text-align: center;
+  background: url(../../common/image/header_bg.png) no-repeat center/cover;
+  margin: 0 auto 40px;
+}
+
+.header_bg {
+  position: relative;
+  top: 5px;
+}
+
+.big {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+/* ↑見出し↑ */
+
+/* ↓TOPへ戻るボタン */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#top_return {
+  height: 128px;
+  text-align: right;
+}
+
+#top_return a {
+  display: inline-block;
+  position: fixed;
+  right: 8px;
+  bottom: 20px;
+  z-index: -50;
+  opacity: 0;
+  transition: opacity 300ms ease-in, z-index 300ms ease-in;
+}
+
+#top_return a:hover {
+  animation: rotate_animation 500ms linear;
+}
+
+@keyframes rotate_animation {
+  0% {
+    transform: rotate(359deg);
+  }
+
+  25% {
+    transform: rotate(270deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+#top_return a.change {
+  margin-top: 60px;
+  margin-right: 8px;
+  position: static;
+}
+
+#top_return img {
+  width: 48px;
+  height: 48px;
+}
+
+/* ↑TOPへ戻るボタン */
+
+/* ↓フッター↓ */
+footer {
+  width: 100%;
+}
+
+.footer_color {
+  height: 352px;
+  background-color: #0180BE;
+}
+
+.taiwan_flag img {
+  margin-top: 20px;
+}
+
+.taiwan_flag {
+  text-align: center;
+}
+
+.line_style {
+  width: 200px;
+  margin-top: 20px;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 12px;
+  border-bottom: solid 1px #ffffff;
+  /*下線*/
+
+}
+
+.copylight {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.footer_menyu {
+  width: 201px;
+  height: 180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon_Facebook img {
+  width: 38px;
+  height: 38px;
+}
+
+.icon_Facebook {
+  width: 38px;
+  height: 38px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.icon_Instagram img {
+  width: 32px;
+  height: 32px;
+  margin-top: 22px;
+  margin-right: 20px;
+}
+
+.icon_Instagram {
+  width: 32px;
+  margin-right: 20px;
+}
+
+.icon_X img {
+  width: 30px;
+  height: 31px;
+}
+
+.icon_X {
+  width: 30px;
+  height: 31px;
+  margin-top: 24px;
+}
+
+.sns {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p_copylight {
+  text-align: center;
+}
+
+.copylight {
+  font-size: 10px;
+  text-align: center;
+}
+
+.pc_footer_logo img {
+  display: none;
+}
+
+/* ↑フッター↑ */
+
+@media screen and (min-width: 768px) {
+
+  /* ↓ヘッダー↓ */
+  .menu_fixed {
+    margin: 0 auto;
+    max-width: 1200px;
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .menu_fixed .left_top_logo img {
+    width: 140px;
+  }
+
+  #menu_btm_o {
+    display: none;
+  }
+
+  #nav {
+    position: static;
+    width: 304px;
+    height: 56px;
+    background: initial;
+    display: flex;
+    justify-content: space-between;
+    transition: none;
+  }
+
+  #nav .nav_flex {
+    display: block;
+  }
+
+  #nav .menu_logo img {
+    display: none;
+  }
+
+  #menu_btm_c {
+    display: none;
+  }
+
+  #nav ul {
+    display: flex;
+    gap: 0px 40px;
+  }
+
+  #nav li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 0;
+    height: 56px;
+    text-transform: capitalize;
+  }
+
+  #nav li a:hover {
+    background: initial;
+  }
+
+  #nav li a span {
+    display: block;
+    border-bottom: none;
+  }
+
+  #nav li a span:hover {
+    border-bottom: 1px solid #fff;
+  }
+
+  #header_migisita {
+    right: 7%;
+    bottom: 20px;
+    width: 36%;
+  }
+
+  /* ↑ヘッダー↑ */
+
+  /* ↓見出し↓ */
+
+  h2 {
+    width: 530px;
+    height: 96px;
+    margin-top: 80px;
+    font-size: 24px;
+    text-align: center;
+    background: url(../../common/image/header_bg.png) no-repeat center/cover;
+    margin: 0 0 80px;
+  }
+
+  .header_bg {
+    position: relative;
+    top: 24px;
+  }
+
+  .big {
+    font-size: 48px;
+  }
+
+  /* ↑見出し↑ */
+
+  /* ↓パンくずメニュー */
+
+  #bread {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+  #breadcrumbs {
+    margin: 20px auto 40px 20px;
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  #breadcrumbs #this_page::before {
+    content: "\FF1E";
+    margin: 0 6px 0 4px;
+  }
+
+  /* ↑パンくずメニュー */
+
+  /* ↓TOPへ戻るボタン */
+
+  #top_return {
+    height: 240px;
+  }
+
+  #top_return a {
+    display: inline-block;
+    height: 100px;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+  }
+
+  #top_return a.change {
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+
+
+  #top_return img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* ↑TOPへ戻るボタン */
+
+  /* ↓フッター↓ */
+  footer {
+    width: 100%;
+    height: 713px;
+  }
+
+  .footer_color {
+    height: 473px;
+  }
+
+  .taiwan_flag img {
+    width: 64px;
+    height: 48px;
+  }
+
+  p.taiwan_flag {
+    text-align: center;
+  }
+
+  .line_style {
+    font-size: 20px;
+  }
+
+  .sns {
+    text-align: right;
+  }
+
+  .pc_footer_logo img {
+    display: block;
+    width: 240px;
+    height: 96px;
+    text-align: center;
+  }
+
+  .pc_footer_logo {
+    text-align: center;
+
+  }
+
+  .copylight {
+    font-size: 12px;
+  }
+
+  .p_copylight {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
+  .pc_footer_grid {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  .footer_menyu {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    top: 50px;
+  }
+
+  .footer_logo {
+    list-style-type: none;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+
+  .sns {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 90px;
+  }
+
+  /* ↑フッター↑ */
+}

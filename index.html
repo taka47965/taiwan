@@ -4,16 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="台湾の観光ページ。">
-  <title>TAIWAN</title>
-  <link rel="stylesheet" href="common/css/reset.css">
+  <meta name="description" content="台湾の観光ページ。台中のページ。">
+  <title>台中 | TAIWAN</title>
+  <link rel="stylesheet" href="../common/css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="common/css/common.css">
-  <link rel="stylesheet" href="top/css/top.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="css/taichung.css">
   <style>
-    /* パーフェクトピクセル用 */
     body::-webkit-scrollbar {
       display: none;
     }
@@ -21,33 +20,34 @@
 </head>
 
 <body>
+  <!-- ローディング画面 -->
+  <div id="loading">
+    <div class="loading_logo"></div>
+  </div>
   <header>
-    <h1><img src="common/image/logo.svg" alt="TAIWAN"></h1>
-
-
     <!-- ↓ヘッダー↓ -->
     <div class="header_wrap">
       <div class="menu_fixed">
         <p class="left_top_logo">
-          <a href="index.html"><img src="common/image/logo.svg" alt="TAIWAN"></a>
+          <a href="../index.html"><img src="../common/image/logo.svg" alt="TAIWAN"></a>
         </p>
 
-        <button id="menu_btm_o"><img src="common/image/drawer_open.png" alt="開くボタン"></button>
+        <button id="menu_btm_o"><img src="../common/image/drawer_open.png" alt="開くボタン"></button>
 
         <nav id="nav">
           <div class="nav_flex">
 
-            <p class="menu_logo"><a href=""><img src="common/image/logo.svg" alt="TAIWAN"></a></p>
+            <p class="menu_logo"><a href=""><img src="../common/image/logo.svg" alt="TAIWAN"></a></p>
 
 
-            <button id="menu_btm_c"><img src="common/image/drawer_close.png" alt="閉じるボタン"></button>
+            <button id="menu_btm_c"><img src="../common/image/drawer_close.png" alt="閉じるボタン"></button>
           </div>
 
           <ul>
-            <li><a href="index.html"><span>top</span></a></li>
-            <li><a href="taipei/index.html"><span>台北</span></a></li>
-            <li><a href="taichung/index.html"><span>台中</span></a></li>
-            <li><a href="tainan/index.html"><span>台南</span></a></li>
+            <li><a href="../index.html"><span>top</span></a></li>
+            <li><a href="../taipei/index.html"><span>台北</span></a></li>
+            <li><a href="index.html"><span>台中</span></a></li>
+            <li><a href="../tainan/index.html"><span>台南</span></a></li>
           </ul>
         </nav>
       </div>
@@ -56,236 +56,213 @@
 
     </div>
     <!-- ↑ヘッダー↑ -->
-
+    <div id="header_image"><img src="image/taichung.png" alt="taichung" class="taichung"></div>
   </header>
-
   <main>
     <!-- ↓パンくずメニュー↓ -->
     <nav id="bread">
       <ol id="breadcrumbs">
-        <li><a href="../top/index.html">top</a></li>
+        <li><a href="../index.html">top</a></li>
         <li id="this_page"></li>
       </ol>
     </nav>
     <!-- ↑パンくずメニュー↑ -->
-    <section class="formosa_sec">
 
-      <div class="formosa_top">
-        <div class="formosa_flex">
-          <div class="left">
-            <p class="formosa_kokki">
-              <img src="common/image/taiwan_national_flag.svg" alt="台湾の国旗">
-            </p>
-            <h3 class="formosa_midasi">formosa</h3>
-            <div class="center">
-              <p class="formosa_sub">フォルモサ（麗しの島）</p>
-            </div>
-          </div>
-
-
-          <div class="right js_scroll_fade">
-            <picture class="formosa_hukei">
-              <source media="(max-width: 767px)" srcset="top/image/introduction1.jpg">
-              <img src="top/image/introduction1_pc.jpg" alt="台湾の写真">
-            </picture>
-          </div>
-        </div>
-      </div>
-
-      <div class="formosa_bottom">
-        <div class="formosa_flex">
-          <div class="left">
-            <p class="text">
-              フォルモサは十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
-          </div>
-          <picture class="formosa_hukei right js_scroll_fade">
-            <source media="(max-width: 767px)" srcset="top/image/introduction2.jpg">
-            <img src="top/image/introduction2_pc.jpg" alt="台湾の写真">
+    <section id="attraction">
+      <h2 class="common_midasi">
+        <p class="header_bg">
+          <span class="big attraction_title"> attraction</span> 観光名所
+        </p>
+      </h2>
+      <div class="attraction1">
+        <h3>高美湿地</h3>
+        <div class="attraction_design">
+          <picture>
+            <source srcset="image/koubisitchi_pc.jpg" alt="高美湿地の景色" media="(min-width:768px)">
+            <img src="image/koubisitchi_sp.jpg" alt="高美湿地の景色" class="attraction_main js_scroll_animation">
           </picture>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery_sec js_scroll_fade">
-      <h2>
-        <p class="header_bg">
-          <span class="big">gallery</span> ギャラリー
-        </p>
-      </h2>
-
-
-      <!-- スライダー -->
-      <div class="slide-wrap">
-
-        <!-- 画像部分 -->
-        <ul class="slide">
-          <li>
-            <div class="sp_prev_btn"></div>
-            <img src="top/image/gallery_1.jpg" alt="" id="slide_img1">
-            <div class="sp_next_btn"></div>
-          </li>
-          <li>
-            <div class="sp_prev_btn"></div>
-            <img src="top/image/gallery_2.jpg" alt="" id="slide_img2">
-            <div class="sp_next_btn"></div>
-          </li>
-          <li>
-            <div class="sp_prev_btn"></div>
-            <img src="top/image/gallery_3.jpg" alt="" id="slide_img3">
-            <div class="sp_next_btn"></div>
-          </li>
-          <li>
-            <div class="sp_prev_btn"></div>
-            <img src="top/image/gallery_4.jpg" alt="" id="slide_img4">
-            <div class="sp_next_btn"></div>
-          </li>
-          <li>
-            <div class="sp_prev_btn"></div>
-            <img src="top/image/gallery_5.jpg" alt="" id="slide_img5">
-            <div class="sp_next_btn"></div>
-          </li>
-        </ul>
-
-        <!-- button部分 -->
-        <ul class="slide_btn_wrap">
-          <li id="slide_btn_left" class="pc_onry"><img src="top/image/left_btn.png" alt=""></li>
-          <li id="slide_btn_1" class="now_page"></li>
-          <li id="slide_btn_2"></li>
-          <li id="slide_btn_3"></li>
-          <li id="slide_btn_4"></li>
-          <li id="slide_btn_5"></li>
-          <li id="slide_btn_right" class="pc_onry"><img src="top/image/right_btn.png" alt=""></li>
-        </ul>
-      </div>
-      <!-- 以上スライダー -->
-    </section>
-
-    <section class="travel_sec">
-      <h2>
-        <p class="header_bg">
-          <span class="big">travel</span> おすすめスポット
-        </p>
-      </h2>
-
-      <div class="travel_flex">
-        <div class="left">
-          <p class="text">訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。</p>
-        </div>
-        <div class="map_wrap right">
-          <a href="taipei/index.html" class="travel_btn js_scroll_fade"><img src="top/image/button_taipei.png"
-              alt="台北"></a>
-          <a href="taichung/index.html" class="travel_btn js_scroll_fade"><img src="top/image/button_taichung.png"
-              alt="台中"></a>
-          <a href="tainan/index.html" class="travel_btn js_scroll_fade"><img src="top/image/button_tainan.png"
-              alt="台南"></a>
-          <img src="top/image/travel_map.png" alt="台湾の地図" class="map">
-        </div>
-      </div>
-      <!-- マップ -->
-    </section>
-
-    <section class="event_sec">
-      <h2>
-        <p class="header_bg">
-          <span class="big">event</span> おすすめイベント
-        </p>
-      </h2>
-
-      <section>
-        <h3>台湾ランタンフェスティバル</h3>
-        <div class="event_flex">
-          <picture class="left js_scroll_fade">
-            <source media="(max-width: 767px)" srcset="top/image/event_1.jpg">
-            <img src="top/image/event_1_pc.jpg" alt="天燈の写真">
+          <p class="explanation attraction_text1 js_scroll_animation">
+            台中から北西へ約20km、大甲溪の河口に広がるおよそ1500ヘクタールの高美湿地は、天気など条件が重なると周りの風景を鏡面のように反射されることから「台湾のウユニ塩湖」と呼ばれて注目を集めています。湿地には100種以上の鳥が生息しており、バードウォッチングを楽しんでいる人も&#xFF01;周辺には海から吹き付ける風を利用した風力発電の施設があり、自然の景色と人工物が融合して独特の景観をつくり出しています。穴場のスポットです。
+          </p>
+          <picture>
+            <source srcset="image/koubisitchi_sub_pc.jpg" alt="" media="(min-width:768px)"><img
+              src="image/koubisitchi_sub_sp.jpg" alt="" class="attraction_sub js_scroll_animation">
           </picture>
-          <div class="right">
-            <h4>開催期間</h4>
-            <p class="date">春節 旧暦元日（2月24日～3月2日）</p>
-            <p class="text">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
-          </div>
+          <p class="explanation attraction_text2 js_scroll_animation">干潮と日暮れが重なるタイミングの景色がおすすめです。</p>
         </div>
-      </section>
-
-      <section class="party">
-        <h3>台北最High新年城<br>カウントダウンパーティー</h3>
-        <div class="event_flex">
-          <picture class="left js_scroll_fade">
-            <source media="(max-width: 767px)" srcset="top/image/event_2.jpg">
-            <img src="top/image/event_2_pc.jpg" alt="カウントダウンパーティの写真">
+      </div>
+      <div class="attraction2">
+        <h3>彩虹眷村</h3>
+        <div class="attraction_design">
+          <picture>
+            <source srcset="image/tsuaihonjuentsun_pc.jpg" alt="" media="(min-width:768px)">
+            <img src="image/tsuaihonjuentsun_sp.jpg" alt="" class="attraction_main js_scroll_animation">
           </picture>
-          <div class="right">
-            <h4>開催期間</h4>
-            <p class="date">12月31日～1月1日</p>
-            <p class="text">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
-          </div>
-        </div>
-      </section>
-
-    </section>
-
-    <section class="data_sec">
-      <h2>
-        <p class="header_bg">
-          <span class="big">台湾基本情報</span>
-        </p>
-      </h2>
-      <div class="data_wrap js_scroll_fade">
-        <p>&#9632;国名&#65306;中華民国・台湾</p>
-        <p>&#9632;首都&#65306;台北</p>
-        <p>&#9632;人口&#65306;約2,300万人</p>
-        <p>&#9632;面積&#65306;約3万6,000km²</p>
-        <p>&#9632;人種・民族&#65306;漢民族、先住民</p>
-        <p>&#9632;宗教&#65306;仏教、道教、キリスト教、その他</p>
-        <p>&#9632;言語&#65306;北京語、台湾語</p>
-        <p>&#9632;通貨&#65306;元（ニュー台湾ドル）</p>
-        <p>&#9632;時差&#65306;1時間</p>
-        <p>&#9632;台湾の気候・服装&#65306;</p>
-        <p class="long">亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。</p>
-        <p>&#9632;台湾の祝祭日&#65306;</p>
-        <div class="saijitu_wrap">
-          <p class="left">正月</p>
-          <p class="right">1月1日</p>
-          <p class="left">端午節</p>
-          <p class="right">6月22日</p>
-          <p class="left">春節</p>
-          <p class="right">1月20日～29日</p>
-          <p class="left">中秋節</p>
-          <p class="right">9月29日</p>
-          <p class="left">平和記念日</p>
-          <p class="right">2月28日</p>
-          <p class="left">国慶節</p>
-          <p class="right">10月10日</p>
-          <p class="left">清明節</p>
-          <p class="right">4月5日</p>
+          <p class="explanation attraction_text3 js_scroll_animation">
+            台湾中部台中市には「彩虹眷村」というインパクトのある場所があります。一度見たら忘れられない鮮やかな色使いの絵で埋め尽くされたこの地区、日本語にすると「虹の村」と称されるこの場所は、家にも壁にも道路にもびっしりと絵が描かれています。そしてこの絵を描いたのは、たった一人のおじいちゃんなのです。今回は見れば元気になる台中市の必見スポットをご紹介します。
+          </p>
+          <picture>
+            <source srcset="image/tsuaihonjuentsun_sub_pc.jpg" alt="" media="(min-width:768px)">
+            <img src="image/tsuaihonjuentsun_sub_sp.jpg" alt="" class="attraction_sub js_scroll_animation">
+          </picture>
+          <p class="explanation attraction_text4 js_scroll_animation">周辺住民の方々のご迷惑とならないように早朝や深夜は避けて、日中に訪れましょう。</p>
         </div>
       </div>
     </section>
+    <!-- #attraction -->
+    <section id="museum">
+      <div class="museum_title_area">
+        <h2 class="common_midasi">
+          <p class="header_bg">
+            <span class="big museum_title"> museum</span> 文化施設
+          </p>
+        </h2>
+      </div>
+      <p class="summary">文化の街とも呼ばれる台中。<br>
+        おすすめの文化施設をご紹介します。</p>
+      <div class="museum_design">
+        <div class="museum_item item1 js_scroll_animation">
+          <h3>アンティーク博物館</h3>
+          <h4>新天地西洋博物館</h4>
+          <picture>
+            <source srcset="image/Museum_1_pc.jpg" alt="" media="(min-width:768px)">
+            <img src="image/Museum_1_sp.jpg" alt="">
+          </picture>
+          <p class="text">サザビーズやクリスティーズから厳選された、千点を超える西洋アンティークの収蔵品を展示しています。</p>
+          <p class="btn" id="modal_btn_1"><a href="">営業時間を見る</a></p>
+        </div>
+        <!-- .museum_item -->
+        <div class="museum_item item2 js_scroll_animation">
+          <h3>科学美術館</h3>
+          <h4>アジア近代美術館</h4>
+          <picture>
+            <source srcset="image/Museum_2_pc.jpg" alt="" media="(min-width:768px)">
+            <img src="image/Museum_2_sp.jpg" alt="">
+          </picture>
+          <p class="text">20世紀以降のアジア各国の画家や彫刻家による作品を集めて展示しています。</p>
+          <p class="btn" id="modal_btn_2"><a href="">営業時間を見る</a></p>
+        </div>
+        <!-- .museum_item -->
+        <div class="museum_item item3 js_scroll_animation">
+          <h3>屋内外美術館</h3>
+          <h4>勤美術館</h4>
+          <picture>
+            <source srcset="image/Museum_3_pc.jpg" alt="" media="(min-width:768px)">
+            <img src="image/Museum_3_sp.jpg" alt="">
+          </picture>
+          <p class="text">絵画、彫刻、インスタレーション、マルチメディア作品など、多様な現代アート作品が展示されています。</p>
+          <p class="btn" id="modal_btn_3"><a href="">営業時間を見る</a></p>
+        </div>
+        <!-- .museum_item -->
+        <div class="museum_item item4 js_scroll_animation">
+          <h3>歴史文学を学ぶ</h3>
+          <h4>台中文学館</h4>
+          <picture>
+            <source srcset="image/Museum_4_pc.jpg" alt="" media="(min-width:768px)">
+            <img src="image/Museum_4_sp.jpg" alt="">
+          </picture>
+          <p class="text">日本統治時代に警察宿舎として建てられた建築物を修繕し、文学公園として開放しています。</p>
+          <p class="btn" id="modal_btn_4"><a href="">営業時間を見る</a></p>
+        </div>
+        <!-- .museum_item -->
+      </div>
+      <!-- .museum_design -->
+    </section>
+    <!-- #museum -->
+
+    <div id="modal_1" class="modal_design">
+      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+      <h1>新天地西洋博物館</h1>
+      <div class="modal_img">
+        <img src="image/M1_modal_sub1.jpg" alt="">
+        <img src="image/M1_modal_sub2.jpg" alt="">
+      </div>
+      <p>営業時間&#65306;10&#58;00&#65374;18&#58;00</p>
+      <p>住所&#65306;台中市東区旱渓東路一段456号1階</p>
+    </div>
+    <!-- #modal_1 -->
+    <div id="modal_2" class="modal_design">
+      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+      <h1>アジア近代美術館</h1>
+      <div class="modal_img">
+        <img src="image/M2_modal_sub1.jpg" alt="">
+        <img src="image/M2_modal_sub2.jpg" alt="">
+      </div>
+      <p>営業時間&#65306;9&#58;30&#65374;17&#58;00</p>
+      <p>住所&#65306;台中市霧峰區柳豐路500號6号1階</p>
+    </div>
+    <!-- #modal_2 -->
+    <div id="modal_3" class="modal_design">
+      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+      <h1>勤美術館</h1>
+      <div class="modal_img">
+        <img src="image/M3_modal_sub1.jpg" alt="">
+        <img src="image/M3_modal_sub2.jpg" alt="">
+      </div>
+      <p>営業時間&#65306;09&#58;00&#65374;17&#58;00</p>
+      <p>住所&#65306;台中市西區館前路71號</p>
+    </div>
+    <!-- #modal_3 -->
+    <div id="modal_4" class="modal_design">
+      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+      <h1>台中文学館</h1>
+      <div class="modal_img">
+        <img src="image/M4_modal_sub1.jpg" alt="">
+        <img src="image/M4_modal_sub2.jpg" alt="">
+      </div>
+      <p>営業時間&#65306;09&#58;00&#65374;17&#58;00</p>
+      <p>住所&#65306;台中市楽群街38号</p>
+    </div>
+    <!-- #modal_4 -->
+
+    <section id="sweets">
+      <h2 class="common_midasi">
+        <p class="header_bg">
+          <span class="big sweets_title"> sweets</span> スイーツ
+        </p>
+      </h2>
+      <div class="sweets_design">
+        <h3>宮原眼科</h3>
+        <p class="sweets_text catch">台湾全土でも大人気のスイーツが集まる台中市で絶対人気を誇るお店、宮原眼科をご紹介します。</p>
+        <div class="sweets_grid">
+          <img src="image/Sweets_1.jpg" alt="" class="sweets_item1 js_scroll_animation">
+          <p class="sweets_text sweets_item2 js_scroll_animation">
+            宮原眼科は、日本統治時代の1927年、日本人の宮原武熊という眼科医が開院し、1945年までは台中で最大規模の眼科診療所だった場所です。宮原医師が日本に帰国後、パイナップルケーキとチーズケーキで有名な台湾の日出グループが、1年半の時間をかけて建物を修復し、店舗にしました。
+          </p>
+          <div class="sweets_img js_scroll_animation">
+            <img src="image/Sweets_sub1.jpg" alt="">
+            <img src="image/Sweets_sub2.jpg" alt="">
+          </div>
+          <p class="sweets_text sweets_item5 js_scroll_animation">現在は、歴史的な特徴を持つ建物や、台湾グルメやスイーツを楽しむ人々で、とても賑わっています。</p>
+          <img src="image/Sweets_2.jpg" alt="" class="sweets_item4">
+        </div>
+        <!-- .sweets_grid -->
+      </div>
+      <!-- .sweets_design -->
+    </section>
+    <!-- #sweets -->
   </main>
   <footer>
     <!-- TOPへ戻る -->
     <div id="top_return">
-      <a href="#" class="return_a"><img src="common/image/top_return.png" alt="TOPへ戻る画像"></a>
+      <a href="#" class="return_a"><img src=" ../common/image/top_return.png" alt="TOPへ戻る画像"></a>
     </div>
     <!-- TOPへ戻る -->
-
-    <!-- ↓フッター↓ -->
     <div class="footer_color">
-      <p class="taiwan_flag"><img src="common/image/taiwan_national_flag.svg"></p>
-
+      <p class="taiwan_flag"><img src="../common/image/taiwan_national_flag.svg"></p>
       <div class="pc_footer_grid">
-
         <div class="footer_menyu">
           <p class="line_style">
-            <a href="#">TOP</a>
+            <a href="../index.html">TOP</a>
           </p>
           <p class="line_style">
-            <a href="taipei/index.html"> 台北</a>
+            <a href="../taipei/index.html"> 台北</a>
           </p>
           <p class="line_style">
-            <a href="taichung/index.html">台中</a>
+            <a href="index.html">台中</a>
           </p>
           <p class="line_style">
-            <a href="tainan/index.html">
+            <a href="../tainan/index.html">
               台南</a>
           </p>
           <p class="line_style">
@@ -297,53 +274,45 @@
               お問い合わせ</a>
           </p>
         </div>
-
-
-
+        <!-- .footer_menyu -->
         <div class="sns">
           <li>
             <div class="icon_Facebook">
-              <img src="common/image/icon_Facebook.png">
+              <img src="../common/image/icon_Facebook.png">
             </div>
           </li>
           <li>
             <div class="icon_Instagram">
-              <img src="common/image/icon_Instagram.png">
+              <img src="../common/image/icon_Instagram.png">
             </div>
           </li>
-
           <li class="li_footer_X">
             <div class="icon_X">
-              <img src="common/image/icon_X.png">
+              <img src="../common/image/icon_X.png">
             </div>
           </li>
         </div>
-
-
-
+        <!-- .sns -->
         <div class="footer_logo">
           <p class="pc_footer_logo">
-            <img src="common/image/logo.svg">
+            <img src="../common/image/logo.svg">
           </p>
           <p class="p_copylight"><small class="copylight">
               Copylight(C)TAIWAN Traveler
             </small></p>
         </div>
-
+        <!-- .footer_logo -->
       </div>
+      <!-- .pc_footer_grid -->
     </div>
+    <!-- .footer_color -->
   </footer>
-  <!-- ↑フッター↑ -->
-  <!-- ↓ローディング画面 -->
-  <div id="loading">
-    <div class="loading_logo"></div>
-  </div>
-  <!-- ↑ローディング画面 -->
+  <script src="../common/js/loading.js"></script>
+  <script src="../common/js/others.js"></script>
+  <script src="../common/js/modal.js"></script>
+  <script src="../common/js/pagetop.js"></script>
+  <script src="js/taichung.js"></script>
 
-  <script src="common/js/loading.js"></script>
-  <script src="common/js/others.js"></script>
-  <script src="common/js/pagetop.js"></script>
-  <script src="top/js/top.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,649 @@
+@charset "utf-8";
+
+/* 共通設定 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 12px;
+  background-color: #f4f4f4;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  width: 225px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  padding: 11px 0;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* header領域 */
+
+header {
+  height: 667px;
+  background: url(../image/top_bg_sp.jpg) no-repeat center top/cover;
+  text-align: center;
+}
+
+h1 img {
+  margin-top: 160px;
+  width: 90vw;
+}
+
+.menu_fixed .left_top_logo img {
+  display: none;
+}
+
+/* main領域 */
+
+/* イントロダクション（上部） */
+
+.formosa_top {
+  background: url(../image/introduction1_bg.jpg) no-repeat center top/cover;
+  padding: 60px 20px 60px;
+}
+
+.formosa_kokki {
+  margin-bottom: 40px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.formosa_sec .right {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+/* 写真fadeアニメーション */
+.formosa_sec .right.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.formosa_top p {
+  display: flex;
+  justify-content: center;
+}
+
+.formosa_midasi {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 18px;
+  text-transform: capitalize;
+}
+
+.formosa_sub {
+  display: inline-block;
+  font-size: 12px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #000;
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+
+/* イントロダクション（下部） */
+
+.formosa_bottom {
+  background: url(../image/introduction2_bg.jpg) no-repeat center top/cover;
+  padding: 60px 20px 60px;
+}
+
+.formosa_bottom .formosa_hukei {
+  border: none;
+}
+
+
+/* ギャラリー */
+
+.gallery_sec {
+  padding: 60px 0 60px;
+  opacity: 0;
+}
+
+/* ギャラリーフェードアニメーション */
+.gallery_sec.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+/* 自力スライダー */
+.slide-wrap {
+  overflow: hidden;
+}
+
+.slide-wrap .slide {
+  display: flex;
+  width: 500%;
+  transition: all 400ms;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+
+
+.slide1 {
+  transform: translateX(0%);
+}
+
+.slide2 {
+  transform: translateX(-20%);
+}
+
+.slide3 {
+  transform: translateX(-40%);
+}
+
+.slide4 {
+  transform: translateX(-60%);
+}
+
+.slide5 {
+  transform: translateX(-80%);
+}
+
+.slide-wrap .slide li {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide-wrap .slide li .sp_prev_btn,
+.slide-wrap .slide li .sp_next_btn {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slide-wrap .slide li .sp_prev_btn {
+  left: 0;
+}
+
+.slide-wrap .slide li .sp_next_btn {
+  right: 0;
+}
+
+.slide-wrap .slide img {
+  max-width: 300px;
+  display: block;
+}
+
+.slide-wrap .slide_btn_wrap {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-wrap .slide_btn_wrap li {
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.slide-wrap .slide_btn_wrap .now_page {
+  opacity: 1;
+}
+
+.slide-wrap .slide_btn_wrap .pc_onry {
+  display: none;
+}
+
+
+
+/* トラベル */
+
+.travel_sec {
+  width: 240px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.travel_sec .map_wrap {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  height: 392px;
+}
+
+.travel_sec .travel_btn {
+  display: block;
+  width: 57px;
+  position: absolute;
+  opacity: 0;
+}
+
+/* travelアニメ */
+.travel_sec .travel_btn.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.travel_sec .travel_btn:nth-child(1) {
+  right: 0;
+  top: 20px;
+}
+
+.travel_sec .travel_btn:nth-child(2) {
+  left: 0;
+  top: 90px;
+}
+
+.travel_sec .travel_btn:nth-child(3) {
+  bottom: 0;
+  left: 80px;
+}
+
+.travel_sec .map {
+  width: 195px;
+}
+
+/* イベント */
+
+.event_sec {
+  padding: 0 20px 20px;
+}
+
+.event_sec h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.event_sec picture {
+  display: block;
+  opacity: 0;
+  margin-bottom: 18px;
+}
+
+/* Eventアニメ */
+.event_sec picture.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.event_sec h4 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.event_sec .date {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.event_sec .text {
+  margin-bottom: 42px;
+}
+
+.event_sec .party h3 {
+  line-height: 1.6;
+}
+
+
+/* 基本情報 */
+
+
+.data_sec {
+  line-height: 1.6;
+  padding: 0 40px 0px;
+}
+
+.data_sec .data_wrap {
+  opacity: 0;
+}
+
+/* Eventアニメ */
+.data_sec .data_wrap.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.data_sec .long {
+  padding-left: 1rem;
+}
+
+.data_sec .saijitu_wrap {
+  padding-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.saijitu_wrap .left {
+  width: 6em;
+}
+
+.saijitu_wrap .right {
+  width: calc(100% - 6em);
+}
+
+
+@media screen and (min-width: 768px) {
+
+  /* 共通設定 */
+
+  body {
+    font-size: 20px;
+  }
+
+  .text {
+    max-width: 420px;
+    width: 35vw;
+    line-height: 1.6;
+    font-size: clamp(1rem, 0.6592rem + 0.692vw, 1.25rem);
+  }
+
+  /* header領域 */
+
+  header {
+    height: 768px;
+    background: url(../image/top_bg_pc.jpg) no-repeat center top/cover;
+  }
+
+  h1 img {
+    margin-top: 227px;
+    width: 780px;
+  }
+
+  .menu_fixed .left_top_logo img {
+    display: block;
+  }
+
+  /* main領域 */
+
+  /* イントロダクション（上部） */
+
+  .formosa_top {
+    background: url(../image/introduction1_bg_pc.png) no-repeat center top/cover;
+    padding: 80px 30px;
+  }
+
+
+
+  /* ↓上部下部とも適用フレックス用divクラスの設定 */
+  .formosa_sec .formosa_flex {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  .formosa_sec .left {
+    width: 484px;
+  }
+
+  .formosa_sec .right {
+    align-items: center;
+    width: 636px;
+  }
+
+  /* ↑上部下部とも適用フレックス用divクラスの設定 */
+
+  .formosa_kokki {
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+
+  .formosa_kokki img {
+    display: block;
+    width: 117px;
+    margin: 0 auto;
+  }
+
+  .center {
+    justify-content: flex-start;
+  }
+
+  .formosa_top p {
+    justify-content: flex-start;
+  }
+
+  .formosa_midasi {
+    font-size: clamp(1.875rem, 0.3413rem + 3.1142vw, 3rem);
+    text-align: left;
+  }
+
+  .formosa_sub {
+    font-size: clamp(1.5625rem, 0.966rem + 1.2111vw, 2rem);
+    display: block;
+    padding-bottom: 0px;
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+
+  /* イントロダクション（下部） */
+
+  .formosa_bottom {
+    background: url(../image/introduction2_bg_pc.png) no-repeat center top/cover;
+    padding: 80px 30px;
+  }
+
+  .formosa_bottom .left {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .formosa_bottom .text {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 20px 0;
+  }
+
+  /* ギャラリー */
+
+  .gallery_sec {
+    padding: 120px 0 120px;
+  }
+
+  .gallery_sec h2 {
+    margin-left: clamp(10px, 7.5vw, 93px);
+  }
+
+  /* 自力スライダー */
+
+
+  .slide-wrap {
+    width: 90vw;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .slide-wrap .slide {
+    width: 1900px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    height: 460px;
+  }
+
+  .slide-wrap .slide li .sp_prev_btn,
+  .slide-wrap .slide li .sp_next_btn {
+    display: none;
+  }
+
+  .slide-wrap .slide img {
+    max-width: 340px;
+  }
+
+  .slide-wrap .slide_btn_wrap {
+    width: 46vw;
+    height: 64px;
+  }
+
+  .slide-wrap .slide_btn_wrap li {
+    width: 28px;
+    height: 28px;
+  }
+
+  .slide-wrap .slide_btn_wrap .pc_onry {
+    display: block;
+  }
+
+  .slide_btn_wrap #slide_btn_left,
+  .slide_btn_wrap #slide_btn_right {
+    background-color: initial;
+    width: 64px;
+    height: 64px;
+  }
+
+
+
+  /* トラベル */
+
+  .travel_sec {
+    width: initial;
+    margin: 0;
+    padding: 0 10px 120px;
+  }
+
+  .travel_sec h2 {
+    margin-left: auto;
+    margin-right: clamp(10px, 7.5vw, 93px);
+  }
+
+  .travel_flex {
+    display: flex;
+    justify-content: center;
+    gap: clamp(30px, 10%, 120px)
+  }
+
+  .travel_sec .text {
+    margin: 200px 0 0 0;
+    padding: 60px 0;
+    letter-spacing: 0;
+  }
+
+  .travel_sec .map_wrap {
+    width: 420px;
+    height: 687px;
+    margin: 0;
+  }
+
+  .travel_sec .travel_btn {
+    width: 100px;
+  }
+
+  .travel_sec .travel_btn:nth-child(1) {
+    right: 0;
+    top: 40px;
+  }
+
+  .travel_sec .travel_btn:nth-child(2) {
+    left: 0;
+    top: 160px;
+  }
+
+  .travel_sec .travel_btn:nth-child(3) {
+    bottom: 0;
+    left: 130px;
+  }
+
+  .travel_sec .map {
+    width: 340px;
+  }
+
+  /* イベント */
+
+  .event_sec {
+    padding: 0 10px 40px;
+  }
+
+  .event_sec h2 {
+    margin-left: clamp(10px, 7.5vw, 93px);
+    margin-bottom: 79px;
+  }
+
+  .event_sec section {
+    width: 80vw;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .event_sec h3 {
+    font-size: clamp(1.75rem, 1.0683rem + 1.3841vw, 2.25rem);
+    text-align: left;
+    margin-bottom: 17px;
+  }
+
+  .event_sec .date {
+    font-size: clamp(1rem, 0.6592rem + 0.692vw, 1.25rem);
+  }
+
+  .event_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 50px;
+  }
+
+  .event_sec picture {
+    width: 45vw;
+    max-width: 580px;
+    margin: 0;
+  }
+
+  .event_sec h4 {
+    font-size: clamp(1rem, 0.6592rem + 0.692vw, 1.25rem);
+    margin-bottom: 2em;
+  }
+
+  .event_sec .date {
+    margin-bottom: 2em;
+  }
+
+  .event_sec .text {
+    padding: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0px;
+  }
+
+
+  /* 基本情報 */
+
+
+  .data_sec {
+    padding: 0 30px;
+    margin-bottom: 240px;
+  }
+
+  .data_sec h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .data_wrap {
+    max-width: 1080px;
+    padding: 40px;
+    margin: 0 auto;
+    border: #000 solid 2px;
+  }
+}

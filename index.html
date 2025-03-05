@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="台湾の観光ページ。台中のページ。">
-  <title>台中 | TAIWAN</title>
+  <meta name="description" content="台湾の観光ページ。台南のページ。">
+  <title>台南 | TAIWAN</title>
   <link rel="stylesheet" href="../common/css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../common/css/common.css">
-  <link rel="stylesheet" href="css/taichung.css">
+  <link rel="stylesheet" href="css/tainan.css">
   <style>
+    /* パーフェクトピクセル用 */
     body::-webkit-scrollbar {
       display: none;
     }
@@ -20,11 +21,14 @@
 </head>
 
 <body>
-  <!-- ローディング画面 -->
-  <div id="loading">
-    <div class="loading_logo"></div>
-  </div>
   <header>
+    <div class="wrap">
+      <h1>
+        <img src="image/tainan.png" alt="台南" class="tainan">
+      </h1>
+    </div>
+
+
     <!-- ↓ヘッダー↓ -->
     <div class="header_wrap">
       <div class="menu_fixed">
@@ -46,8 +50,8 @@
           <ul>
             <li><a href="../index.html"><span>top</span></a></li>
             <li><a href="../taipei/index.html"><span>台北</span></a></li>
-            <li><a href="index.html"><span>台中</span></a></li>
-            <li><a href="../tainan/index.html"><span>台南</span></a></li>
+            <li><a href="../taichung/index.html"><span>台中</span></a></li>
+            <li><a href="index.html"><span>台南</span></a></li>
           </ul>
         </nav>
       </div>
@@ -56,8 +60,9 @@
 
     </div>
     <!-- ↑ヘッダー↑ -->
-    <div id="header_image"><img src="image/taichung.png" alt="taichung" class="taichung"></div>
+
   </header>
+
   <main>
     <!-- ↓パンくずメニュー↓ -->
     <nav id="bread">
@@ -68,180 +73,211 @@
     </nav>
     <!-- ↑パンくずメニュー↑ -->
 
-    <section id="attraction">
-      <h2 class="common_midasi">
-        <p class="header_bg">
-          <span class="big attraction_title"> attraction</span> 観光名所
-        </p>
-      </h2>
-      <div class="attraction1">
-        <h3>高美湿地</h3>
-        <div class="attraction_design">
-          <picture>
-            <source srcset="image/koubisitchi_pc.jpg" alt="高美湿地の景色" media="(min-width:768px)">
-            <img src="image/koubisitchi_sp.jpg" alt="高美湿地の景色" class="attraction_main js_scroll_animation">
-          </picture>
-          <p class="explanation attraction_text1 js_scroll_animation">
-            台中から北西へ約20km、大甲溪の河口に広がるおよそ1500ヘクタールの高美湿地は、天気など条件が重なると周りの風景を鏡面のように反射されることから「台湾のウユニ塩湖」と呼ばれて注目を集めています。湿地には100種以上の鳥が生息しており、バードウォッチングを楽しんでいる人も&#xFF01;周辺には海から吹き付ける風を利用した風力発電の施設があり、自然の景色と人工物が融合して独特の景観をつくり出しています。穴場のスポットです。
-          </p>
-          <picture>
-            <source srcset="image/koubisitchi_sub_pc.jpg" alt="" media="(min-width:768px)"><img
-              src="image/koubisitchi_sub_sp.jpg" alt="" class="attraction_sub js_scroll_animation">
-          </picture>
-          <p class="explanation attraction_text2 js_scroll_animation">干潮と日暮れが重なるタイミングの景色がおすすめです。</p>
-        </div>
-      </div>
-      <div class="attraction2">
-        <h3>彩虹眷村</h3>
-        <div class="attraction_design">
-          <picture>
-            <source srcset="image/tsuaihonjuentsun_pc.jpg" alt="" media="(min-width:768px)">
-            <img src="image/tsuaihonjuentsun_sp.jpg" alt="" class="attraction_main js_scroll_animation">
-          </picture>
-          <p class="explanation attraction_text3 js_scroll_animation">
-            台湾中部台中市には「彩虹眷村」というインパクトのある場所があります。一度見たら忘れられない鮮やかな色使いの絵で埋め尽くされたこの地区、日本語にすると「虹の村」と称されるこの場所は、家にも壁にも道路にもびっしりと絵が描かれています。そしてこの絵を描いたのは、たった一人のおじいちゃんなのです。今回は見れば元気になる台中市の必見スポットをご紹介します。
-          </p>
-          <picture>
-            <source srcset="image/tsuaihonjuentsun_sub_pc.jpg" alt="" media="(min-width:768px)">
-            <img src="image/tsuaihonjuentsun_sub_sp.jpg" alt="" class="attraction_sub js_scroll_animation">
-          </picture>
-          <p class="explanation attraction_text4 js_scroll_animation">周辺住民の方々のご迷惑とならないように早朝や深夜は避けて、日中に訪れましょう。</p>
-        </div>
-      </div>
-    </section>
-    <!-- #attraction -->
-    <section id="museum">
-      <div class="museum_title_area">
-        <h2 class="common_midasi">
+
+
+    <section class="attraction_sec">
+      <div class="wrap">
+
+        <h2>
           <p class="header_bg">
-            <span class="big museum_title"> museum</span> 文化施設
+            <span class="big"> attraction</span> 観光名所
           </p>
         </h2>
-      </div>
-      <p class="summary">文化の街とも呼ばれる台中。<br>
-        おすすめの文化施設をご紹介します。</p>
-      <div class="museum_design">
-        <div class="museum_item item1 js_scroll_animation">
-          <h3>アンティーク博物館</h3>
-          <h4>新天地西洋博物館</h4>
-          <picture>
-            <source srcset="image/Museum_1_pc.jpg" alt="" media="(min-width:768px)">
-            <img src="image/Museum_1_sp.jpg" alt="">
-          </picture>
-          <p class="text">サザビーズやクリスティーズから厳選された、千点を超える西洋アンティークの収蔵品を展示しています。</p>
-          <p class="btn" id="modal_btn_1"><a href="">営業時間を見る</a></p>
-        </div>
-        <!-- .museum_item -->
-        <div class="museum_item item2 js_scroll_animation">
-          <h3>科学美術館</h3>
-          <h4>アジア近代美術館</h4>
-          <picture>
-            <source srcset="image/Museum_2_pc.jpg" alt="" media="(min-width:768px)">
-            <img src="image/Museum_2_sp.jpg" alt="">
-          </picture>
-          <p class="text">20世紀以降のアジア各国の画家や彫刻家による作品を集めて展示しています。</p>
-          <p class="btn" id="modal_btn_2"><a href="">営業時間を見る</a></p>
-        </div>
-        <!-- .museum_item -->
-        <div class="museum_item item3 js_scroll_animation">
-          <h3>屋内外美術館</h3>
-          <h4>勤美術館</h4>
-          <picture>
-            <source srcset="image/Museum_3_pc.jpg" alt="" media="(min-width:768px)">
-            <img src="image/Museum_3_sp.jpg" alt="">
-          </picture>
-          <p class="text">絵画、彫刻、インスタレーション、マルチメディア作品など、多様な現代アート作品が展示されています。</p>
-          <p class="btn" id="modal_btn_3"><a href="">営業時間を見る</a></p>
-        </div>
-        <!-- .museum_item -->
-        <div class="museum_item item4 js_scroll_animation">
-          <h3>歴史文学を学ぶ</h3>
-          <h4>台中文学館</h4>
-          <picture>
-            <source srcset="image/Museum_4_pc.jpg" alt="" media="(min-width:768px)">
-            <img src="image/Museum_4_sp.jpg" alt="">
-          </picture>
-          <p class="text">日本統治時代に警察宿舎として建てられた建築物を修繕し、文学公園として開放しています。</p>
-          <p class="btn" id="modal_btn_4"><a href="">営業時間を見る</a></p>
-        </div>
-        <!-- .museum_item -->
-      </div>
-      <!-- .museum_design -->
-    </section>
-    <!-- #museum -->
 
-    <div id="modal_1" class="modal_design">
-      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-      <h1>新天地西洋博物館</h1>
-      <div class="modal_img">
-        <img src="image/M1_modal_sub1.jpg" alt="">
-        <img src="image/M1_modal_sub2.jpg" alt="">
-      </div>
-      <p>営業時間&#65306;10&#58;00&#65374;18&#58;00</p>
-      <p>住所&#65306;台中市東区旱渓東路一段456号1階</p>
-    </div>
-    <!-- #modal_1 -->
-    <div id="modal_2" class="modal_design">
-      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-      <h1>アジア近代美術館</h1>
-      <div class="modal_img">
-        <img src="image/M2_modal_sub1.jpg" alt="">
-        <img src="image/M2_modal_sub2.jpg" alt="">
-      </div>
-      <p>営業時間&#65306;9&#58;30&#65374;17&#58;00</p>
-      <p>住所&#65306;台中市霧峰區柳豐路500號6号1階</p>
-    </div>
-    <!-- #modal_2 -->
-    <div id="modal_3" class="modal_design">
-      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-      <h1>勤美術館</h1>
-      <div class="modal_img">
-        <img src="image/M3_modal_sub1.jpg" alt="">
-        <img src="image/M3_modal_sub2.jpg" alt="">
-      </div>
-      <p>営業時間&#65306;09&#58;00&#65374;17&#58;00</p>
-      <p>住所&#65306;台中市西區館前路71號</p>
-    </div>
-    <!-- #modal_3 -->
-    <div id="modal_4" class="modal_design">
-      <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
-      <h1>台中文学館</h1>
-      <div class="modal_img">
-        <img src="image/M4_modal_sub1.jpg" alt="">
-        <img src="image/M4_modal_sub2.jpg" alt="">
-      </div>
-      <p>営業時間&#65306;09&#58;00&#65374;17&#58;00</p>
-      <p>住所&#65306;台中市楽群街38号</p>
-    </div>
-    <!-- #modal_4 -->
+        <section class="attraction_1">
+          <h3>安平老街</h3>
+          <div class="pc_grid">
+            <p class="main_img js_scroll_fade">
+              <picture>
+                <source media="(max-width: 767px)" srcset="image/ampinraojie.jpg">
+                <img src="image/ampinraojie_pc.jpg" alt="安平老街の写真">
+              </picture>
+            </p>
+            <p class="explanation">
+              「台湾の京都」の異名を持つ古都・台南。かつて台湾の首都であったことから、重要な史跡が点在し、ノスタルジックなムードが漂っています。17世紀に造られた台湾最古の街は、現在、台湾レトロとも称されており、数々の掘り出し物やお土産、飲食店が立ち並びます。写真スポットとしても人気の高いエリアです。
+            </p>
 
-    <section id="sweets">
-      <h2 class="common_midasi">
-        <p class="header_bg">
-          <span class="big sweets_title"> sweets</span> スイーツ
-        </p>
-      </h2>
-      <div class="sweets_design">
-        <h3>宮原眼科</h3>
-        <p class="sweets_text catch">台湾全土でも大人気のスイーツが集まる台中市で絶対人気を誇るお店、宮原眼科をご紹介します。</p>
-        <div class="sweets_grid">
-          <img src="image/Sweets_1.jpg" alt="" class="sweets_item1 js_scroll_animation">
-          <p class="sweets_text sweets_item2 js_scroll_animation">
-            宮原眼科は、日本統治時代の1927年、日本人の宮原武熊という眼科医が開院し、1945年までは台中で最大規模の眼科診療所だった場所です。宮原医師が日本に帰国後、パイナップルケーキとチーズケーキで有名な台湾の日出グループが、1年半の時間をかけて建物を修復し、店舗にしました。
-          </p>
-          <div class="sweets_img js_scroll_animation">
-            <img src="image/Sweets_sub1.jpg" alt="">
-            <img src="image/Sweets_sub2.jpg" alt="">
+            <div class="sub_img js_scroll_fade">
+              <p>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="image/ampinraojie_sub1.jpg">
+                  <img src="image/ampinraojie_sub1_pc.jpg" alt="安平老街の写真">
+                </picture>
+              </p>
+
+              <p>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="image/ampinraojie_sub2.jpg">
+                  <img src="image/ampinraojie_sub2_pc.jpg" alt="安平老街の写真">
+                </picture>
+              </p>
+            </div>
+
+            <p class="explanation">露店めぐりは日中、ノスタルジックな撮影は夜がおすすめです。</p>
           </div>
-          <p class="sweets_text sweets_item5 js_scroll_animation">現在は、歴史的な特徴を持つ建物や、台湾グルメやスイーツを楽しむ人々で、とても賑わっています。</p>
-          <img src="image/Sweets_2.jpg" alt="" class="sweets_item4">
-        </div>
-        <!-- .sweets_grid -->
+        </section>
+
+
+
+        <section class="attraction_2">
+          <h3>赤嵌楼</h3>
+          <div class="pc_grid">
+            <p class="main_img js_scroll_fade">
+              <picture>
+                <source media="(max-width: 767px)" srcset="image/sekikanro.jpg">
+                <img src="image/sekikanro_pc.jpg" alt="赤嵌楼の写真">
+              </picture>
+            </p>
+            <p class="explanation">
+              赤嵌楼は台南中西区の代表的な古跡で、安平区の安平古堡と並んで台南の二大古跡になっています。夜になると、周辺には黄色いライトが灯り、古い建築物をより一層味わい深く演出してくれます。前方の広場ではよく音楽会が催され、台南市民の夜の憩いの場にもなっています。赤嵌楼は、昼も夜も独特の魅力で楽しませてくれるでしょう。
+            </p>
+
+            <div class="sub_img js_scroll_fade">
+              <p>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="image/sekikanro_sub1.jpg">
+                  <img src="image/sekikanro_sub1_pc.jpg" alt="赤嵌楼の写真">
+                </picture>
+              </p>
+
+              <p>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="image/sekikanro_sub2.jpg">
+                  <img src="image/sekikanro_sub2_pc.jpg" alt="赤嵌楼の写真">
+                </picture>
+              </p>
+            </div>
+
+            <p class="explanation">遅い時間帯はライトアップも楽しめます。<span>営業時間 8:30 - 21:30</span></p>
+          </div>
+        </section>
+
+
       </div>
-      <!-- .sweets_design -->
     </section>
-    <!-- #sweets -->
+
+
+    <section class="gourmet_sec">
+      <div class="wrap">
+
+        <h2>
+          <p class="header_bg">
+            <span class="big">gourmet</span> グルメ
+          </p>
+        </h2>
+
+
+        <p class="text">
+          台南でしか味わえない台湾グルメをご紹介いたします。
+        </p>
+
+        <div class="pc_grid">
+          <section>
+            <div>
+              <h3>担仔麺</h3>
+              <p class="sub_h3">タンツーメン</p>
+
+              <p><img src="image/Gourmet_1.jpg" alt="担仔麺のお店の写真" class="js_scroll_fade"></p>
+
+              <p>台湾の屋台などでもよく食べられている麺料理で、あっさりしたスープにそぼろがトッピングされているのが特長です。「度小月」は各地に支店を持つ人気店です。</p>
+              <button id="modal_btn_1">画像を見る</button>
+            </div>
+          </section>
+
+
+          <section>
+            <div>
+              <h3>蝦仁飯</h3>
+              <p class="sub_h3">エビ飯</p>
+
+              <p><img src="image/Gourmet_2.jpg" alt="蝦仁飯のお店の写真" class="js_scroll_fade"></p>
+
+              <p>台南10大美食にも選ばれている代表料理です。中でも有名な「矮仔成」は、台南に来ないと味わえない料理として知られており、日本人にも好まれる味です。</p>
+              <button id="modal_btn_2">画像を見る</button>
+            </div>
+          </section>
+
+
+          <section>
+            <div>
+              <h3>小籠包</h3>
+              <p class="sub_h3">ショウロンポー</p>
+
+              <p><img src="image/Gourmet_3.jpg" alt="小籠包のお店の写真" class="js_scroll_fade"></p>
+
+              <p>小籠包は世界中で愛されている台湾料理の一つですよね。「上海華都小吃」は、上海スタイルの料理を提供してくれるお店で、特に小籠包に定評があります。</p>
+              <button id="modal_btn_3">画像を見る</button>
+            </div>
+          </section>
+
+
+          <section>
+            <div>
+              <h3>鴨肉飯</h3>
+              <p class="sub_h3">ヤーロウファン</p>
+
+              <p><img src="image/Gourmet_4.jpg" alt="鴨肉飯のお店の写真" class="js_scroll_fade"></p>
+
+              <p>台湾の軽食文化を指す小吃は、台湾の人々の日々の食生活に欠かせないものとなっています。中でも「亞德當歸鴨」の鴨肉飯は人気の一品です。</p>
+              <button id="modal_btn_4">画像を見る</button>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="healing_sec">
+      <div class="wrap">
+
+        <h2>
+          <p class="header_bg">
+            <span class="big">healing</span> 癒しのスポット
+          </p>
+        </h2>
+
+        <p class="text">
+          美しい蓮の花々が咲く白河地区。<br>
+          自然に囲まれて、至福のひとときを過ごしませんか？
+        </p>
+
+
+        <section>
+          <h3>白河蓮花</h3>
+          <div class="pc_flex">
+
+            <p>
+              <picture>
+                <source media="(max-width: 767px)" srcset="image/Healing_1.jpg">
+                <img src="image/Healing_1_pc.jpg" alt="蓮の写真" class="js_scroll_fade">
+              </picture>
+            </p>
+
+            <p>白河地区は、蓮の栽培が盛んであり、美しい蓮の花が咲く景観で知られています。特に夏には蓮の花が最盛期を迎えるため、白河蓮花節などのイベントが開催されて多くの観光客が訪れます。</p>
+          </div>
+
+          <div class="pc_flex">
+            <p>
+              <picture>
+                <source media="(max-width: 767px)" srcset="image/Healing_2.jpg">
+                <img src="image/Healing_2_pc.jpg" alt="蓮の写真" class="js_scroll_fade">
+              </picture>
+            </p>
+
+            <p>白河地区の蓮花は「台南白河蓮花」とも呼ばれています。台南市の観光や文化の象徴の一つとされており、地元の経済や観光に重要な役割を果たしています。</p>
+          </div>
+        </section>
+
+
+
+      </div>
+    </section>
+
+
   </main>
+
+
   <footer>
     <!-- TOPへ戻る -->
     <div id="top_return">
@@ -250,7 +286,9 @@
     <!-- TOPへ戻る -->
     <div class="footer_color">
       <p class="taiwan_flag"><img src="../common/image/taiwan_national_flag.svg"></p>
+
       <div class="pc_footer_grid">
+
         <div class="footer_menyu">
           <p class="line_style">
             <a href="../index.html">TOP</a>
@@ -259,10 +297,10 @@
             <a href="../taipei/index.html"> 台北</a>
           </p>
           <p class="line_style">
-            <a href="index.html">台中</a>
+            <a href="../taichung/index.html">台中</a>
           </p>
           <p class="line_style">
-            <a href="../tainan/index.html">
+            <a href="index.html">
               台南</a>
           </p>
           <p class="line_style">
@@ -274,7 +312,9 @@
               お問い合わせ</a>
           </p>
         </div>
-        <!-- .footer_menyu -->
+
+
+
         <div class="sns">
           <li>
             <div class="icon_Facebook">
@@ -286,13 +326,16 @@
               <img src="../common/image/icon_Instagram.png">
             </div>
           </li>
+
           <li class="li_footer_X">
             <div class="icon_X">
               <img src="../common/image/icon_X.png">
             </div>
           </li>
         </div>
-        <!-- .sns -->
+
+
+
         <div class="footer_logo">
           <p class="pc_footer_logo">
             <img src="../common/image/logo.svg">
@@ -301,18 +344,50 @@
               Copylight(C)TAIWAN Traveler
             </small></p>
         </div>
-        <!-- .footer_logo -->
+
       </div>
-      <!-- .pc_footer_grid -->
     </div>
-    <!-- .footer_color -->
   </footer>
+
+  <!-- modal1 -->
+
+  <div class="modal_design">
+    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+    <p><img src="image/G_modal_sub1.jpg" alt=""></p>
+  </div>
+
+
+  <!-- modal2 -->
+  <div class="modal_design">
+    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+    <p><img src="image/G_modal_sub2.jpg" alt=""></p>
+  </div>
+
+
+  <!-- modal3 -->
+  <div class="modal_design">
+    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+    <p><img src="image/G_modal_sub3.jpg" alt=""></p>
+  </div>
+
+
+  <!-- modal4 -->
+  <div class="modal_design">
+    <button class="modal_close"><img src="../common/image/modal_close.png" alt=""></button>
+    <p><img src="image/G_modal_sub4.jpg" alt=""></p>
+  </div>
+
+  <!-- ↓ローディング画面 -->
+  <div id="loading">
+    <div class="loading_logo"></div>
+  </div>
+  <!-- ↑ローディング画面 -->
+
   <script src="../common/js/loading.js"></script>
   <script src="../common/js/others.js"></script>
   <script src="../common/js/modal.js"></script>
   <script src="../common/js/pagetop.js"></script>
-  <script src="js/taichung.js"></script>
-
+  <script src="js/tainan.js"></script>
 </body>
 
 </html>

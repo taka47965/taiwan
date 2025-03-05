@@ -1,0 +1,539 @@
+@charset "utf-8";
+
+/* 全体設定 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 12px;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  width: 225px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  padding: 11px 0;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  padding: 0 40px;
+}
+
+/* ヘッダー */
+
+header {
+  height: 667px;
+  background: url(../image/tainan_top_bg.jpg) no-repeat center/cover;
+  padding-top: 120px;
+}
+
+header .tainan {
+  height: 372px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* メイン */
+
+/* attraction */
+
+.attraction_sec h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.attraction_sec .explanation {
+  margin: 0 auto;
+  padding: 20px 16px;
+  width: 100%;
+  background-color: rgba(100, 201, 155, 0.2);
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.attraction_sec .main_img {
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+/* アニメ */
+.attraction_sec .main_img.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.attraction_sec .main_img img {
+  width: 100%;
+}
+
+.attraction_sec .sub_img {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+/* アニメ */
+.attraction_sec .sub_img.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.attraction_sec .sub_img img {
+  max-height: 100%;
+}
+
+/* こまごました差異 */
+
+/* 区切り部分 */
+.attraction_sec .attraction_1 p:nth-of-type(3) {
+  padding: 8px 16px;
+  margin-bottom: 60px;
+}
+
+.attraction_sec .attraction_2::before {
+  display: block;
+  content: "";
+  width: 76.2%;
+  height: 0;
+  border-top: 1px solid #000;
+  margin: 0 auto 60px;
+}
+
+/* 最後のセンターと太字 */
+.attraction_sec .attraction_2 p:nth-of-type(3) {
+  padding: 8px 16px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.attraction_sec .explanation span {
+  display: block;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Gourmet */
+
+.gourmet_sec {
+  margin-bottom: 60px;
+}
+
+.gourmet_sec .text {
+  margin-bottom: 40px;
+}
+
+.gourmet_sec section {
+  margin-bottom: 40px;
+}
+
+.gourmet_sec h3 {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.gourmet_sec .sub_h3 {
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.gourmet_sec p {
+  margin-bottom: 12px;
+}
+
+.gourmet_sec img {
+  width: 100%;
+  opacity: 0;
+}
+
+/* アニメ */
+.gourmet_sec img.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+.gourmet_sec button {
+  border: 2px solid #EDA184;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: end;
+}
+
+.gourmet_sec button:hover {
+  text-decoration: underline wavy #EDA184 2px;
+}
+
+.gourmet_sec button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 6px solid #EDA184;
+  position: relative;
+  top: 0px;
+  left: 6px;
+}
+
+
+
+/* Healing*/
+
+.healing_sec {
+  margin-bottom: 0px;
+}
+
+.healing_sec .text {
+  margin-bottom: 40px;
+}
+
+.healing_sec h3 {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.healing_sec p {
+  margin-bottom: 20px;
+}
+
+.healing_sec section div:nth-of-type(2) p:nth-last-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.healing_sec img {
+  width: 100%;
+  opacity: 0;
+}
+
+/* アニメ */
+.healing_sec img.is-animated {
+  opacity: 1;
+  transition: all 300ms ease-in 0ms;
+}
+
+/* モーダルウィンドウ */
+.modal_design {
+  padding-top: 80px;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.modal_design p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.modal_design p img {
+  box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 10px;
+}
+
+.akeru {
+  z-index: 100;
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+.modal_close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+}
+
+@media screen and (min-width:768px) {
+
+  body {
+    font-size: clamp(1rem, 0.6592rem + 0.692vw, 1.25rem);
+  }
+
+  .text {
+    width: 420px;
+    margin: 0 0 80px 0;
+    padding: 40px 0;
+  }
+
+  .wrap {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  /* ヘッダー */
+
+  header {
+    height: 768px;
+    background: url(../image/tainan_top_bg_pc.jpg) no-repeat center/cover;
+    padding-top: 114px;
+  }
+
+  header .tainan {
+    height: 540px;
+    margin: 0 0 0 280px;
+  }
+
+
+
+  /* メイン */
+
+  /* attraction */
+
+  .attraction_sec h2 {
+    margin: 120px 0 80px 20px;
+  }
+
+  .attraction_sec h3 {
+    font-size: clamp(1.6875rem, 0.9206rem + 1.5571vw, 2.25rem);
+    text-align: justify;
+  }
+
+  .attraction_sec .attraction_2 h3 {
+    margin-bottom: 28px;
+  }
+
+  .attraction_sec section {
+    max-width: 1120px;
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .attraction_sec section {
+    margin-bottom: 120px;
+  }
+
+  .attraction_sec .pc_grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 54% 1fr;
+    grid-template-rows: 320px 177px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .attraction_sec .pc_grid img {
+    max-height: 100%;
+  }
+
+  .attraction_sec .explanation {
+    margin: 0;
+    padding: 20px;
+    max-width: 480px;
+    max-height: 100%;
+    justify-self: end;
+    height: auto;
+  }
+
+  .attraction_sec .main_img {
+    margin-bottom: 0px;
+  }
+
+  .attraction_sec .sub_img {
+    gap: 20px;
+    max-height: 100%;
+    margin-bottom: 0px;
+    height: initial;
+  }
+
+  /* こまごました差異 */
+  /* 区切り部分 */
+  .attraction_sec .attraction_1 p:nth-of-type(3) {
+    margin-bottom: 0;
+    padding: 18px 20px;
+  }
+
+  .attraction_sec .attraction_2::before {
+    width: 480px;
+    margin: 0 auto 120px;
+  }
+
+  /* 最後のセンターと太字 */
+  .attraction_sec .attraction_2 p:nth-of-type(3) {
+    margin-bottom: 0px;
+    padding: 18px 20px;
+  }
+
+  /* Gourmet */
+
+  .gourmet_sec {
+    margin-bottom: 120px;
+  }
+
+  .gourmet_sec h2 {
+    margin: 0 20px 78px auto;
+  }
+
+  .gourmet_sec .text {
+    margin: 0 75px 80px auto;
+  }
+
+  .gourmet_sec .pc_grid {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 60px;
+  }
+
+  .gourmet_sec section {
+    margin-bottom: 0;
+  }
+
+  .gourmet_sec h3 {
+    font-size: clamp(1.6875rem, 0.9206rem + 1.5571vw, 2.25rem);
+    line-height: 1;
+    margin: 0 12px 20px 0;
+    text-align: justify;
+    display: inline-block;
+  }
+
+  .gourmet_sec .sub_h3 {
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+    text-align: justify;
+    display: inline-block;
+  }
+
+  .gourmet_sec p {
+    margin-bottom: 20px;
+  }
+
+  .gourmet_sec img {
+    width: 100%;
+    max-height: 220px;
+  }
+
+  .gourmet_sec button {
+    border: 2px solid #EDA184;
+    width: 42%;
+    max-width: 210px;
+    height: 63px;
+    font-size: clamp(1rem, 0.6592rem + 0.692vw, 1.25rem);
+  }
+
+  .gourmet_sec button::after {
+    border: 10px solid transparent;
+    border-left: 10px solid #EDA184;
+  }
+
+  /* Healing*/
+
+  .healing_sec {
+    margin-bottom: 0px;
+  }
+
+  .healing_sec h2 {
+    margin: 0 0 78px 20px;
+  }
+
+  .healing_sec .text {
+    margin: 0 0 80px 75px;
+  }
+
+  .healing_sec section {
+    max-width: 1120px;
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .healing_sec h3 {
+    font-weight: bold;
+    font-size: clamp(1.6875rem, 0.9206rem + 1.5571vw, 2.25rem);
+    margin-bottom: 60px;
+  }
+
+  .healing_sec .pc_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .healing_sec div:nth-of-type(2) {
+    flex-direction: row-reverse;
+    margin-bottom: 0px;
+  }
+
+  .healing_sec .pc_flex p {
+    margin-bottom: 0;
+  }
+
+  .healing_sec .pc_flex p:nth-child(1) {
+    width: 54%;
+    max-width: 600px;
+  }
+
+  .healing_sec .pc_flex p:nth-child(2) {
+    width: 43%;
+    max-width: 480px;
+  }
+
+  .healing_sec p img {
+    width: 100%;
+  }
+
+  /* modal */
+
+  .modal_design p {
+    width: 35%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .modal_close {
+    top: 20px;
+    right: 20px;
+    width: 36px;
+  }
+
+}
